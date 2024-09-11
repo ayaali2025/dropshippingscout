@@ -8,10 +8,6 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\PricingController;
 
-
-Route::get('/', function(){
-    return "Updated!";
-});
 // Page Routes
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::resource('pages', PagesController::class);
