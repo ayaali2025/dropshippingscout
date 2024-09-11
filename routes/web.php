@@ -5,15 +5,19 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\BlogController;
-use App\Http\Controllers\FaqController; 
+use App\Http\Controllers\FaqController;
 use App\Http\Controllers\PricingController;
 
+
+Route::get('/test', function(){
+    return "Test !";
+});
 // Page Routes
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::resource('pages', PagesController::class);
 });
 
- 
+
 // Authentication Routes For Admin
 Route::get('admin/site/login', [LoginController::class, 'showLoginForm'])->name('Adminlogin');
 Route::post('admin/site/login', [LoginController::class, 'login'])->name('Adminlogin');
