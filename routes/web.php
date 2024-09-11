@@ -10,7 +10,7 @@ use App\Http\Controllers\PricingController;
 
 
 Route::get('/', function(){
-    return "Test !";
+    return "Updated!";
 });
 // Page Routes
 Route::prefix('admin')->name('admin.')->group(function () {
