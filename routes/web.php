@@ -9,7 +9,7 @@ use App\Http\Controllers\FaqController;
 use App\Http\Controllers\PricingController;
 
 
-Route::get('/test', function(){
+Route::get('/', function(){
     return "Test !";
 });
 // Page Routes
