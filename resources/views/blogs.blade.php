@@ -79,7 +79,7 @@
                         <div class="post-featured-image">
                             <figure class="image-anime">
                                 <a href="{{ route('blogs.show', $blog->slug) }}">
-                                    <img src="{{ asset($blog->image) }}" alt="{{ $blog->title }}">
+                                    <img src="{{ asset('storage/' .$blog->image) }}" alt="{{ $blog->title }}">
                                 </a>
                             </figure>
                         </div>

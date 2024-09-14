@@ -13,173 +13,111 @@
 
 @section('content')
     <div class="container">
-        <h1 class="title" style="margin-top:0px;">Uncover Market Trends</h1>
-        <h5  class="title" style="margin-top:20px ; font-size: 20px; color: #1E3F5B; font-weight: 550;">In the fast paced world of business, staying ahead of market trends is essential for success.</h5>
-        <br>
-
-       
-          <div class="con-left">
-            <div class="left-column">
-              <img src="./images/ebay.jpg" alt="ebay" width="118.32px" height="45px" style="margin-bottom: 20px;">
-        
-              <h2>identifying profitable products to sell</h2>
-              
-              <br>
-              <p style="color: #1E3F5B; font-size: 16px; font-weight: 400;">product research tools empower you to find products with high deman, low competition, and good profit potential - the recipe for dropshipping success.</p>
-                 <br>
-              <button class="btn-default" style="background: var(--primary-500) 0% 0% no-repeat padding-box;
-              border: 1px solid var(--primary-500);
-              color: white
-              ;
-              background: #3545D6 0% 0% no-repeat padding-box;
-              border: 1px solid #AFB9FA; border-radius: 8px;font-size: 13px;">start for $1 Trail</button>
-              
-              <p style="color: #1E3F5B; font-size: 13px; font-weight: 550;padding-top:10px;width: max-content;">
-               
-                <img src="{{asset('images/verified.png')}}" style="max-width: 35px"/>
-                
-                Trusted by 200.000 entrepreneurs like you</p>
-
-            </div>
-
-
-            
-            <div class="right-column">
-              <img src="./images/P S.jpg" alt="Example Image">
-            </div>
-          </div>
-         
+<!-- Tool Page Title and Description -->
+<h1 class="title" style="margin-top:0px;">{{$page->content_header}}</h1>
+<h5  class="title" style="margin-top:20px ; font-size: 20px; color: #1E3F5B; font-weight: 550;">{{$page->content_subheader}}</h5>
+<br>
+  <div class="con-left">
+    <div class="left-column">
+ 
+      <h2>{{$page->header_1}}</h2>
+      
+      <br>
+      <p style="color: #1E3F5B; font-size: 16px; font-weight: 400;">{{$page->paragraph_1}}</p>
          <br>
-
- 
-         <div class="con-left">
-            <div class="right-column">
-                <img src="./images/P S.jpg" alt="Example Image">
-            </div>
+      <button class="btn-default" style="background: var(--primary-500) 0% 0% no-repeat padding-box;
+      border: 1px solid var(--primary-500);
+      color: white
+      ;
+      background: #3545D6 0% 0% no-repeat padding-box;
+      border: 1px solid #AFB9FA; border-radius: 8px;font-size: 13px;">start for $1 Trail</button>
+      
+      <p style="color: #1E3F5B; font-size: 13px; font-weight: 550;padding-top:10px;width: max-content;">
+       
+        <img src="{{asset('images/verified.png')}}" style="max-width: 35px"/>
         
-            <div class="left-column">
-                <h2 style="width: max-content;">identifying profitable products to sell</h2>
-                <br>
-                <p style="color: #1E3F5B; font-size: 16px; font-weight: 400;">
-                    product research tools empower you to find products with high demand, low competition, and good profit potential - the recipe for dropshipping success.
-                </p>
-                <br>
-                <button class="btn-default" style="background: var(--primary-500) 0% 0% no-repeat padding-box;
-                    border: 1px solid var(--primary-500);
-                    color: white;
-                    background: #3545D6 0% 0% no-repeat padding-box;
-                    border: 1px solid #AFB9FA; border-radius: 8px; font-size: 13px;">
-                    start for $1 Trial
-                </button>
-            </div>
-        </div>
-        
+        Trusted by 200.000 entrepreneurs like you</p>
 
- 
-        <div class="con-left">
-         <div class="left-column">
-     
-           <h2 style="width: max-content;">identifying profitable products to sell</h2>
-           
-           <br>
-           <p style="color: #1E3F5B; font-size: 16px; font-weight: 400;">product research tools empower you to find products with high deman, low competition, and good profit potential - the recipe for dropshipping success.</p>
-              <br>
-           <button class="btn-default" style="background: var(--primary-500) 0% 0% no-repeat padding-box;
-           border: 1px solid var(--primary-500);
-           color: white
-           ;
-           background: #3545D6 0% 0% no-repeat padding-box;
-           border: 1px solid #AFB9FA; border-radius: 8px;font-size: 13px;">start for $1 Trail</button>
-         </div>
-
-
-         
-         <div class="right-column">
-           <img src="./images/P S.jpg" alt="Example Image">
-         </div>
-       </div>
-
- 
-       <div class="con-left">
-        <div class="right-column">
-            <img src="./images/P S.jpg" alt="Example Image">
-        </div>
-    
-        <div class="left-column">
-            <h2 style="width: max-content;">identifying profitable products to sell</h2>
-            <br>
-            <p style="color: #1E3F5B; font-size: 16px; font-weight: 400;">
-                product research tools empower you to find products with high demand, low competition, and good profit potential - the recipe for dropshipping success.
-            </p>
-            <br>
-            <button class="btn-default" style="background: var(--primary-500) 0% 0% no-repeat padding-box;
-                border: 1px solid var(--primary-500);
-                color: white;
-                background: #3545D6 0% 0% no-repeat padding-box;
-                border: 1px solid #AFB9FA; border-radius: 8px; font-size: 13px;">
-                start for $1 Trial
-            </button>
-        </div>
-    </div>
-    
- 
-
-
-    <!-- Why Choose Us Section Start -->
-    <div class="why-choose-us">
-      <div class="container">
-          <div class="row section-row align-items-center">
-              <div class="col-lg-8 col-md-12">
-                  <!-- Section Title Start -->
-                  <div class="section-title">
-                      <h3 class="wow fadeInUp">why choose us</h3>
-                      <h2 class="text-anime-style-3">Why choose us ?</h2>
-                  </div>
-                  <!-- Section Title End -->
-              </div>
-          </div>
-
-          <div class="row">
-              <div class="col-lg-4 col-md-6">
-                  <!-- Why Choose Item Start -->
-                  <div class="why-choose-us-item wow fadeInUp" data-wow-delay="0.25s">
-                      <div class="icon-box">
-                          <img src="images/icon-whyus-1.svg" alt="">
-                      </div>
-                      <h3>Identifying Market Trends</h3>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
-                  </div>
-                  <!-- Why Choose Item End -->
-              </div>
-
-              <div class="col-lg-4 col-md-6">
-                  <!-- Why Choose Item Start -->
-                  <div class="why-choose-us-item wow fadeInUp" data-wow-delay="0.5s">
-                      <div class="icon-box">
-                          <img src="images/icon-whyus-2.svg" alt="">
-                      </div>
-                      <h3>Competitor Analysis</h3>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
-                  </div>
-                  <!-- Why Choose Item End -->
-              </div>
-
-              <div class="col-lg-4">
-                  <!-- Why Choose Item Start -->
-                  <div class="why-choose-us-item wow fadeInUp" data-wow-delay="0.75s">
-                      <div class="icon-box">
-                          <img src="images/icon-whyus-3.svg" alt="">
-                      </div>
-                      <h3>Competitor Analysis</h3>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
-                  </div>
-                  <!-- Why Choose Item End -->
-              </div>
-
-          </div>
       </div>
+    
+    <div class="right-column">
+      <img src="{{ asset('storage/' . $page['image_1']) }}" alt="Example Image">
+    </div>
+
   </div>
-  <!-- Why Choose Us Section End -->
+ 
+ <br>
+
+
+ <div class="con-left">
+    <div class="right-column">
+        <img src="{{ asset('storage/' . $page['image_2']) }}" alt="Example Image">
+    </div>
+
+    <div class="left-column">
+        <h2 style="width: max-content;">{{$page->header_2}}</h2>
+        <br>
+        <p style="color: #1E3F5B; font-size: 16px; font-weight: 400;">
+            {{$page->paragraph_2}}
+        </p>
+        <br>
+        <button class="btn-default" style="background: var(--primary-500) 0% 0% no-repeat padding-box;
+            border: 1px solid var(--primary-500);
+            color: white;
+            background: #3545D6 0% 0% no-repeat padding-box;
+            border: 1px solid #AFB9FA; border-radius: 8px; font-size: 13px;">
+            start for $1 Trial
+        </button>
+    </div>
+</div>
+
+
+
+<div class="con-left">
+ <div class="left-column">
+
+   <h2 style="width: max-content;">{{$page->header_3}}</h2>
+   
+   <br>
+   <p style="color: #1E3F5B; font-size: 16px; font-weight: 400;">{{$page->paragraph_3}}</p>
+      <br>
+   <button class="btn-default" style="background: var(--primary-500) 0% 0% no-repeat padding-box;
+   border: 1px solid var(--primary-500);
+   color: white
+   ;
+   background: #3545D6 0% 0% no-repeat padding-box;
+   border: 1px solid #AFB9FA; border-radius: 8px;font-size: 13px;">start for $1 Trail</button>
+ </div>
+
+
+ 
+ <div class="right-column">
+   <img src="{{ asset('storage/' . $page['image_3']) }}" alt="Example Image">
+ </div>
+</div>
+
+
+<div class="con-left">
+<div class="right-column">
+    <img src="{{ asset('storage/' . $page['image_4']) }}" alt="Example Image">
+</div>
+
+<div class="left-column">
+    <h2 style="width: max-content;">{{$page->header_4}}</h2>
+    <br>
+    <p style="color: #1E3F5B; font-size: 16px; font-weight: 400;">
+        {{$page->paragraph_4}}
+    </p>
+    <br>
+    <button class="btn-default" style="background: var(--primary-500) 0% 0% no-repeat padding-box;
+        border: 1px solid var(--primary-500);
+        color: white;
+        background: #3545D6 0% 0% no-repeat padding-box;
+        border: 1px solid #AFB9FA; border-radius: 8px; font-size: 13px;">
+        start for $1 Trial
+    </button>
+</div>
+</div>
 
     <div class="container faqHead" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
 
@@ -190,7 +128,6 @@
   
   </div>
 
-  
     
     <div class="faq-section">
       <div class="container">

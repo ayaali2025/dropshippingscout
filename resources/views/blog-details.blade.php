@@ -26,7 +26,7 @@
     </div>
     
     
-    <img src="{{ asset($blog->image) }}" alt="{{ $blog->title }}" />
+    <img src="{{ asset('storage/' .$blog->image) }}" alt="{{ $blog->title }}" />
 
     <div class="content-container">
         <div class="content">

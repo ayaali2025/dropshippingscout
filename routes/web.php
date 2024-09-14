@@ -7,6 +7,8 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\PricingController;
+use App\Http\Controllers\toolsController;
+
 
 // Page Routes
 Route::prefix('admin')->name('admin.')->group(function () {
@@ -49,6 +51,19 @@ Route::prefix('admin/faqs')->name('admin.faqs.')->group(function () {
     Route::delete('{faq}', [FaqController::class, 'destroy'])->name('destroy');
 });
 
+
+// tools pages
+Route::get('/Suppliers-Scouting/{slug}', [toolsController::class, 'show'])->name('tools-supplier.show');
+Route::get('/competitor-monitoring/{slug}', [toolsController::class, 'show'])->name('tools-competitor.show');
+Route::get('/product-scouting/{slug}', [toolsController::class, 'show'])->name('tools-product.show');
+
+// Route for index page to list all tools
+Route::get('/admin/tools', [toolsController::class, 'index'])->name('tools.index');
+Route::get('/admin/tools/create', [toolsController::class, 'create'])->name('tools.create');
+Route::post('/admin/tools', [toolsController::class, 'store'])->name('tools.store');
+Route::get('/admin/tools/{tool}/edit', [toolsController::class, 'edit'])->name('tools.edit');
+Route::put('/admin/tools/{tool}', [toolsController::class, 'update'])->name('tools.update');
+Route::delete('/admin/tools/{tool}', [toolsController::class, 'destroy'])->name('tools.destroy');
 
 // Dynamic Page Route
  Route::get('/{slug}', [PagesController::class, 'show'])->name('pages.show');

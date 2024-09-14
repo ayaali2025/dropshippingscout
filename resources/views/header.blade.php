@@ -108,13 +108,13 @@
                             </li>
                             <!-- Resources Dropdown End -->
 
-                            <li class="nav-item"><a class="nav-link" href="{{ route('pages.show', ['slug' => $pages->where('view_name', 'pricing')->first()->slug]) }}">Pricing</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://app.dropshippingscout.com/pricing">Pricing</a></li>
                             <li class="nav-item"><a class="nav-link" href="{{ route('pages.show', ['slug' => $pages->where('view_name', 'affiliate')->first()->slug]) }}">Affiliate</a></li>
                         </ul>
                     </div>
                     <!-- Let’s Start Button Start -->
                     <div class="header-btn d-inline-flex">
-                        <a href="#" style="position: relative; display: inline-block; z-index: 1; overflow: hidden; padding: 15px 45px 15px 20px; font-weight: bold; color: #1E3F5B">Login</a>
+                        <a href="https://app.dropshippingscout.com/login" style="position: relative; display: inline-block; z-index: 1; overflow: hidden; padding: 15px 45px 15px 20px; font-weight: bold; color: #1E3F5B">Login</a>
                         <a href="{{ route('pages.show', ['slug' => $pages->where('view_name', 'contact-us')->first()->slug]) }}" class="btn-default" style="background: #3545D6; border: 1px solid #3545D6; border-radius: 8px;">Start $1 Trial</a>
                     </div>
                     <!-- Let’s Start Button End -->

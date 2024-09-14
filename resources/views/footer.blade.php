@@ -32,7 +32,7 @@
                                 <h2>Company</h2>
                                 <ul>
                                     <li><a href="{{ route('pages.show', ['slug' => 'about']) }}">About Us</a></li>
-                                    <li><a href="{{ route('pages.show', ['slug' => 'pricing']) }}">Pricing</a></li>
+                                    <li><a href="https://app.dropshippingscout.com/pricing">Pricing</a></li>
                                     <li><a href="{{ route('pages.show', ['slug' => 'affiliate']) }}">Affiliate</a></li>
                                     <li><a href="{{ route('faqs') }}">Help Center</a></li>
                                     <li><a href="{{ route('pages.show', ['slug' => 'contact-us']) }}">Contact Us</a></li>
