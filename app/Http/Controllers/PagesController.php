@@ -19,9 +19,9 @@ class PagesController extends Controller
     public function index()
     {
         if (!$this->isAdmin()) {
-            return redirect()->route('Adminlogin')->with('error', 'Access denied.'); 
+            return redirect()->route('Adminlogin')->with('error', 'Access denied.');
         }
-        
+
         $pages = Page::all();
         return view('pages.index', compact('pages'));
     }
@@ -29,7 +29,7 @@ class PagesController extends Controller
     public function create()
     {
         if (!$this->isAdmin()) {
-            return redirect()->route('Adminlogin')->with('error', 'Access denied.'); 
+            return redirect()->route('Adminlogin')->with('error', 'Access denied.');
         }
 
         $viewNames = $this->getViewNames();
@@ -55,7 +55,7 @@ class PagesController extends Controller
     public function edit(Page $page)
     {
         if (!$this->isAdmin()) {
-            return redirect()->route('Adminlogin')->with('error', 'Access denied.'); 
+            return redirect()->route('Adminlogin')->with('error', 'Access denied.');
         }
 
         $viewNames = $this->getViewNames();
@@ -88,14 +88,14 @@ class PagesController extends Controller
     {
         $page = $this->getPageByIdentifier($identifier);
         $pricingFaqs = $this->getPricingFaqs();
-    
+
         if ($page) {
             return $this->handlePageView($page, $pricingFaqs);
         }
-    
+
         return $this->handleBlogView($identifier);
     }
-    
+
     // Helper methods
     private function getPageByIdentifier($identifier)
     {
@@ -103,60 +103,60 @@ class PagesController extends Controller
                    ->orWhere('slug', $identifier)
                    ->first();
     }
-    
+
     private function getPricingFaqs()
     {
         return Faq::where('category_name', 'Payment')->get();
     }
-    
+
     private function handlePageView($page, $pricingFaqs)
     {
         if ($page->view_name === 'index') {
             return $this->loadIndexPage($page);
         }
-    
+
         if ($page->view_name === 'pricing') {
             return view('pricing', ['page' => $page, 'faqs' => $pricingFaqs]);
         }
-    
+
         if (view()->exists($page->view_name)) {
             return view($page->view_name, ['page' => $page]);
         }
-    
+
         abort(404, 'View not found');
     }
-    
+
     private function loadIndexPage($page)
     {
         $blogs = Blog::orderBy('created_at', 'desc')->limit(3)->get();
         return view('index', ['page' => $page, 'blogs' => $blogs]);
     }
-    
+
     private function handleBlogView($identifier)
     {
         $blog = Blog::where('slug', $identifier)->first();
-    
+
         if ($blog) {
             return $this->loadBlogDetailsPage($blog);
         }
-    
+
         abort(404, 'Page or Blog not found');
     }
-    
+
     private function loadBlogDetailsPage($blog)
     {
         $headings = $this->extractHeadingsFromContent($blog->content);
         $blog->content = $this->saveFormattedContent($blog->content);
-    
+
         return view('blog-details', compact('blog', 'headings'));
     }
-    
+
     private function extractHeadingsFromContent($content)
     {
         $dom = new \DOMDocument();
         @$dom->loadHTML($content); // Suppress warnings
         $headings = [];
-    
+
         for ($i = 1; $i <= 6; $i++) {
             $tags = $dom->getElementsByTagName('h' . $i);
             foreach ($tags as $tag) {
@@ -167,17 +167,17 @@ class PagesController extends Controller
                 ];
             }
         }
-    
+
         return $headings;
     }
-    
+
     private function saveFormattedContent($content)
     {
         $dom = new \DOMDocument();
         @$dom->loadHTML($content); // Suppress warnings
         return $dom->saveHTML();
     }
-    
+
     private function getViewNames()
     {
         $viewFiles = File::allFiles(resource_path('views'));
