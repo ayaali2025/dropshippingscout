@@ -43,7 +43,7 @@ class FaqController extends Controller
         }
 
         $faqs = Faq::all();
-        return view('faqs.index', compact('faqs')); // Ensure 'index' view is in resources/views/faqs
+        return view('Faqs.index', compact('faqs')); // Ensure 'index' view is in resources/views/faqs
     }
 
     // Show the form to create a new FAQ
