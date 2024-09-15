@@ -53,7 +53,7 @@ class FaqController extends Controller
             return redirect()->route('faqs')->with('error', 'Access denied.');
         }
 
-        $categories = ['General', 'Technical', 'Payment']; // Replace with your categories
+        $categories = ['General', 'Technical', 'Payment','tool']; // Replace with your categories
         return view('faqs.create', compact('categories'));
     }
 
