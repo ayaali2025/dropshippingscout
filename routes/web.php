@@ -70,6 +70,11 @@ Route::get('/admin/tools/{tool}/edit', [toolsController::class, 'edit'])->name('
 Route::put('/admin/tools/{tool}', [toolsController::class, 'update'])->name('tools.update');
 Route::delete('/admin/tools/{tool}', [toolsController::class, 'destroy'])->name('tools.destroy');
 
+#home page route
+Route::get("/", function(){
+    $home_page= new PagesController;
+    return $home_page->show('index');
+});
 // Dynamic Page Route
  Route::get('/{slug}', [PagesController::class, 'show'])->name('pages.show');
 
