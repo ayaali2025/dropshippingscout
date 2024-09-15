@@ -11,7 +11,7 @@ use App\Http\Controllers\toolsController;
 
 
 #home page route
-Route::get("", function(){
+Route::get("/", function(){
     $home_page= new PagesController;
     return $home_page->show('index');
 });
