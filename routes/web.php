@@ -16,6 +16,8 @@ use App\Http\Controllers\toolsController;
 //     return $home_page->show('index');
 // });
 // Page Routes
+
+
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::resource('pages', PagesController::class);
 });
