@@ -10,7 +10,7 @@ use App\Http\Controllers\PricingController;
 use App\Http\Controllers\toolsController;
 
 
-Route::get("/", function(){
+Route::get("/test", function(){
     return ['foo'=>'bar'];
 });
 
