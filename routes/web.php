@@ -10,6 +10,11 @@ use App\Http\Controllers\PricingController;
 use App\Http\Controllers\toolsController;
 
 
+#home page route
+Route::get("/", function(){
+    $home_page= new PagesController;
+    return $home_page->show('index');
+});
 // Page Routes
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::resource('pages', PagesController::class);
