@@ -10,11 +10,6 @@ use App\Http\Controllers\PricingController;
 use App\Http\Controllers\toolsController;
 
 
-Route::get("/test", function(){
-    return ['foo'=>'bar'];
-});
-
-
 #home page route
 Route::get("/", function(){
     $home_page= new PagesController;
