@@ -70,15 +70,17 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('faqs') }}">User FAQs</a>
+                    <a class="nav-link" href="{{ route('admin.faqs.index') }}">FAQS</a>
                 </li>
-                @auth
-                    @if(Auth::user()->is_admin)
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('admin.faqs.index') }}">Admin FAQs</a>
-                        </li>
-                    @endif
-                @endauth
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('blogs.index') }}">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('tools.index') }}">Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('admin.pages.index') }}">Slugs</a>
+                </li>
             </ul>
         </div>
     </nav>
