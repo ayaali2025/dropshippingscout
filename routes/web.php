@@ -12,6 +12,7 @@ use App\Http\Controllers\toolsController;
 
 #home page route
 Route::get("/", function(){
+    return "123";
     $home_page= new PagesController;
     return $home_page->show('index');
 });
