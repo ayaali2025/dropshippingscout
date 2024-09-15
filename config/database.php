@@ -50,7 +50,7 @@ return [
             'username' => env('DB_USERNAME', 'u457557566_Scout_Admin'),
             'password' => env('DB_PASSWORD', '6#nNeKB*3VCo'),
             'unix_socket' => env('DB_SOCKET', ''),
-            'port'=> env('DB_PORT', '3306'),
+            'port'=> env('DB_PORT', '3306') ,
             'charset' => env('DB_CHARSET', 'utf8mb4'),
             'collation' => env('DB_COLLATION', 'utf8mb4_unicode_ci'),
             'prefix' => '',
