@@ -14,6 +14,8 @@ Route::get("/", function(){
     return ['foo'=>'bar'];
 });
 
+
+
 #home page route
 Route::get("/", function(){
     $home_page= new PagesController;
