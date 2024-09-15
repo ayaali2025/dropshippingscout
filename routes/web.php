@@ -15,7 +15,6 @@ Route::get("/", function(){
 });
 
 
-
 #home page route
 Route::get("/", function(){
     $home_page= new PagesController;
