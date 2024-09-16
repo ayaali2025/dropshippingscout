@@ -24,12 +24,9 @@
             <li><img src="{{ asset('images/heart.svg') }}" alt="Likes"><span class="number">{{ $blog->likes }}</span></li>
         </ul>
     </div>
-    
-    
- 
 
              @if ($blog->video_url)
-                <iframe width="100%" height="315" src="{{ \Str::after($blog->video_url, 'v=') }}" frameborder="0" allowfullscreen></iframe>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/{{ \Str::after($blog->video_url, 'v=') }}" frameborder="0" allowfullscreen></iframe>
             @else
                 <a href="{{ route('blogs.show', $blog->slug) }}">
                     <img src="{{ asset('storage/' .$blog->image) }}" alt="{{ $blog->title }}">
