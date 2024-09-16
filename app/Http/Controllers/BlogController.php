@@ -88,8 +88,7 @@ class BlogController extends Controller
 
     public function update(Request $request, $id)
     {
-        dd($request->all()); // This will dump all the request data to help you verify what is being submitted
-
+ 
         $blog = Blog::findOrFail($id);
     
         $validatedData = $request->validate([
@@ -115,6 +114,8 @@ class BlogController extends Controller
             $validatedData['image'] = null; // No image for this blog
             $validatedData['video_url'] = $request->input('video_url'); // Set the video URL
         }
+
+ 
     
         // Update the blog entry with the validated data
         $blog->update($validatedData);
