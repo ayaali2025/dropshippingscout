@@ -30,6 +30,13 @@ Route::post('admin/site/login', [LoginController::class, 'login'])->name('Adminl
 Route::get('/login', function () {
     return redirect('https://app.dropshippingscout.com/login');
 });
+Route::get('/register', function () {
+    return redirect('https://app.dropshippingscout.com/register');
+});
+
+Route::get('/pricing', function () {
+    return redirect('https://app.dropshippingscout.com/pricing');
+});
 //Route::get('register', [RegisterController::class, 'showRegistrationForm'])->name('register');
 //Route::post('register', [RegisterController::class, 'register']);
 // Route::get('new-password', function () {
