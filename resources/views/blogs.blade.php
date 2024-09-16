@@ -78,11 +78,16 @@
                     <div class="blog-item w-100" data-category="{{ $blog->category }}">
                         <div class="post-featured-image">
                             <figure class="image-anime">
-                                <a href="{{ route('blogs.show', $blog->slug) }}">
-                                    <img src="{{ asset('storage/' .$blog->image) }}" alt="{{ $blog->title }}">
-                                </a>
+                                @if ($blog->video_url)
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/{{ \Str::after($blog->video_url, 'v=') }}" frameborder="0" allowfullscreen></iframe>
+                                @else
+                                    <a href="{{ route('blogs.show', $blog->slug) }}">
+                                        <img src="{{ asset('storage/' .$blog->image) }}" alt="{{ $blog->title }}">
+                                    </a>
+                                @endif
                             </figure>
                         </div>
+                        
                         <div class="post-item-body">
                             <p><a href="{{ route('blogs.show', $blog->slug) }}">{{ $blog->publish_date }}</a></p>
                             <h3><a href="{{ route('blogs.show', $blog->slug) }}">{{ $blog->title }}</a></h3>

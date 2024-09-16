@@ -932,3 +932,11 @@ margin-left: 8px;
   background:#3545D6;
   color: white;
 }
+
+@media only screen and (max-width: 767px) {
+  .service-content-title h2 {
+      font-size: xxx-large;
+      max-width: 170px;
+      font-size: 19px !important;
+  }
+}

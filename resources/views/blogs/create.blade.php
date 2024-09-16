@@ -30,9 +30,23 @@
                 </div>
 
                 <div class="form-group mb-3">
-                    <label for="image" class="form-label">Blog Image</label>
-                    <input type="file" class="form-control" id="image" name="image" required>
+                    <label for="media_type" class="form-label">Select Media Type</label>
+                    <select class="form-control" id="media_type" name="media_type" required>
+                        <option value="image">Image</option>
+                        <option value="video">Video</option>
+                    </select>
                 </div>
+                
+                <div class="form-group mb-3" id="image-input">
+                    <label for="image" class="form-label">Blog Image</label>
+                    <input type="file" class="form-control" id="image" name="image">
+                </div>
+                
+                <div class="form-group mb-3" id="video-input" style="display: none;">
+                    <label for="video_url" class="form-label">YouTube Video URL</label>
+                    <input type="url" class="form-control" id="video_url" name="video_url" placeholder="https://www.youtube.com/watch?v=xyz">
+                </div>
+              
 
                 <div class="form-group mb-3">
                     <label for="slug" class="form-label">Slug</label>
@@ -81,4 +95,15 @@
         tinymce.get('content').save();
     });
 </script>
+
+  
+<script>
+    // Toggle between image and video input fields
+    document.getElementById('media_type').addEventListener('change', function() {
+        const mediaType = this.value;
+        document.getElementById('image-input').style.display = mediaType === 'image' ? 'block' : 'none';
+        document.getElementById('video-input').style.display = mediaType === 'video' ? 'block' : 'none';
+    });
+</script>
+
 @endsection

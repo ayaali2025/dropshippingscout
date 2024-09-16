@@ -37,10 +37,25 @@
 
                 <!-- Blog Image -->
                 <div class="form-group mb-3">
+                    <label for="media_type" class="form-label">Select Media Type</label>
+                    <select class="form-control" id="media_type" name="media_type">
+                        <option value="image" {{ $blog->video_url ? '' : 'selected' }}>Image</option>
+                        <option value="video" {{ $blog->video_url ? 'selected' : '' }}>Video</option>
+                    </select>
+                </div>
+                
+                <div class="form-group mb-3" id="image-input" style="{{ $blog->video_url ? 'display: none;' : '' }}">
                     <label for="image" class="form-label">Blog Image</label>
                     <input type="file" class="form-control" id="image" name="image">
-                    <img src="{{ asset('images/' . $blog->image) }}" alt="{{ $blog->title }}" class="img-fluid mt-3">
+                    <img src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title }}" class="img-fluid mt-3">
                 </div>
+                
+                <div class="form-group mb-3" id="video-input" style="{{ $blog->video_url ? '' : 'display: none;' }}">
+                    <label for="video_url" class="form-label">YouTube Video URL</label>
+                    <input type="url" class="form-control" id="video_url" name="video_url" value="{{ $blog->video_url }}">
+                </div>
+              
+                
 
                 <!-- Likes -->
                 <div class="form-group mb-3">
@@ -90,6 +105,15 @@
         plugins: 'link image code',
         toolbar: 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | outdent indent | link image',
         height: 500
+    });
+</script>
+  
+<script>
+    // Same JavaScript as in create view
+    document.getElementById('media_type').addEventListener('change', function() {
+        const mediaType = this.value;
+        document.getElementById('image-input').style.display = mediaType === 'image' ? 'block' : 'none';
+        document.getElementById('video-input').style.display = mediaType === 'video' ? 'block' : 'none';
     });
 </script>
 @endsection

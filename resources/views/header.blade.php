@@ -21,7 +21,7 @@
                 <div class="collapse navbar-collapse main-menu">
                     <div class="nav-menu-wrapper">
                         <ul class="navbar-nav mr-auto" id="menu" style="background: #FFFFFF; border: 1px solid #E3E7FC; border-radius: 31px;">
-                            <li class="nav-item"><a class="nav-link" href="{{ route('pages.show', ['slug' => $pages->where('view_name', 'index')->first()->slug]) }}">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
                             
                             <!-- Tools Dropdown Start -->
                             <li class="nav-item submenu"><a class="nav-link" href="#">Tools</a>
@@ -84,15 +84,9 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href="#" class="resource-link">
-                                            <div class="resource-item">
-                                                <img src="{{ asset('images/header icons/tutorial.svg') }}" alt="Tutorial Icon" class="resource-icon">
-                                                <div>
-                                                    <h6>Tutorial</h6>
-                                                    <p>Learn how to use our tools with<br>our detailed tutorials and guides.</p>
-                                                </div>
-                                            </div>
-                                        </a>
+                                       
+                                        <button class="custom-btn btn-12"><span>For 1$!</span><span>Start now</span></button>
+
                                         <a href="{{ url('faqs') }}" class="resource-link">
                                             <div class="resource-item">
                                                 <img src="{{ asset('images/header icons/faq.svg') }}" alt="FAQs Icon" class="resource-icon">
