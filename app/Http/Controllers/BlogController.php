@@ -88,6 +88,8 @@ class BlogController extends Controller
 
     public function update(Request $request, $id)
     {
+        dd($request->all()); // This will dump all the request data to help you verify what is being submitted
+
         $blog = Blog::findOrFail($id);
     
         $validatedData = $request->validate([
