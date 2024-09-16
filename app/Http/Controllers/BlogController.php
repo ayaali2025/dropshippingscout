@@ -54,6 +54,7 @@ class BlogController extends Controller
                 return back()->withErrors(['video_url' => 'Video URL is required if media type is set to video.']);
             }
             $validatedData['image'] = null; // No image for this blog
+            $validatedData['video_url'] = $request->input('video_url'); // Set the video URL
         }
     
         // Create a new blog entry
@@ -61,6 +62,7 @@ class BlogController extends Controller
     
         return redirect()->route('blogs.index')->with('success', 'Blog created successfully.');
     }
+    
     
     
 
@@ -106,15 +108,18 @@ class BlogController extends Controller
             if ($request->hasFile('image')) {
                 $validatedData['image'] = $request->file('image')->store('images', 'public');
             }
-            $validatedData['video_url'] = null;
+            $validatedData['video_url'] = null; // No video for this blog
         } elseif ($validatedData['media_type'] === 'video') {
-            $validatedData['image'] = null;
+            $validatedData['image'] = null; // No image for this blog
+            $validatedData['video_url'] = $request->input('video_url'); // Set the video URL
         }
     
+        // Update the blog entry with the validated data
         $blog->update($validatedData);
     
         return redirect()->route('blogs.show', $blog->slug)->with('success', 'Blog updated successfully.');
     }
+    
     
     
     
