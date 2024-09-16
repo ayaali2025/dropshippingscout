@@ -781,3 +781,6 @@ background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
   top: 2px;
 }
 
+.btn-10:hover{
+background: #1e3f5b;
+}
