@@ -44,7 +44,7 @@
     <label>First Name</label>
     <div class="input-group">
         <div class="icon-wrapper">
-            <img src="images/name.svg" alt="Name Icon">
+            <img src="{{asset('images/name.svg')}}" alt="Name Icon">
         </div>
         <input type="text" name="fname" class="form-control input-with-icon" id="fname" placeholder="Your Name" required>
     </div>
@@ -55,7 +55,7 @@
     <label>Last Name</label>
     <div class="input-group">
         <div class="icon-wrapper">
-            <img src="images/name.svg" alt="Name Icon">
+            <img src="{{asset('images/name.svg')}}" alt="Name Icon">
         </div>
         <input type="text" name="lname" class="form-control input-with-icon" id="lname" placeholder="Your Name" required>
     </div>
@@ -66,7 +66,7 @@
     <label>Email</label>
     <div class="input-group">
         <div class="icon-wrapper">
-            <img src="images/email.svg" alt="Email Icon">
+            <img src="{{asset('images/email.svg')}}" alt="Email Icon">
         </div>
         <input type="email" name="email" class="form-control input-with-icon" id="email" placeholder="Email@example.com" required>
     </div>
@@ -100,7 +100,7 @@
 
                 </div>
                  <div class="col-md-12 FAQ mt-4">
-    <img src="images/questionMark.svg" alt="FAQ Icon"> Find answers to some of the most common questions? <span style="color: #C2F750"> FAQ</span>
+    <img src="{{asset('images/questionMark.svg')}}" alt="FAQ Icon"> Find answers to some of the most common questions? <span style="color: #C2F750"> FAQ</span>
 </div>
 </div>
 </div>
