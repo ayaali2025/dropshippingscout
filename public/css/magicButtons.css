@@ -781,7 +781,7 @@ background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
   top: 2px;
 }
 
-.btn-12, .btn-9{
+.btn-12, .btn-10{
   display: none;
 }
 
@@ -789,7 +789,10 @@ background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
 .btn-12{
   display: block;
 }
-.btn-9{
+.btn-10{
   display: block;
+}
+.magicButtons{
+  display: inline-block;
 }
 }
