@@ -270,7 +270,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>Product Research (eBay)</h2>
-                            <a href="#"><img src="images/arrow.svg" alt=""></a>
+                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae.</p>
                     </div>
@@ -287,7 +287,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>Product Research (Shopify)</h2>
-                            <a href="#"><img src="images/arrow.svg" alt=""></a>
+                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae.</p>
                     </div>
@@ -304,7 +304,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>eBay Best Items</h2>
-                            <a href="#"><img src="images/arrow.svg" alt=""></a>
+                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae.</p>
                     </div>
@@ -321,7 +321,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>Category Research (eBay)</h2>
-                            <a href="#"><img src="images/arrow.svg" alt=""></a>
+                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae.</p>
                     </div>
@@ -338,7 +338,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>Search By Image (eBay)</h2>
-                            <a href="#"><img src="images/arrow.svg" alt=""></a>
+                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae.</p>
                     </div>
@@ -355,7 +355,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>Title Builder</h2>
-                            <a href="#"><img src="images/arrow.svg" alt=""></a>
+                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae.</p>
                     </div>
@@ -373,7 +373,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>Competitors Research (eBay)</h2>
-                            <a href="#"><img src="images/arrow.svg" alt=""></a>
+                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae.</p>
                     </div>
@@ -390,7 +390,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>Competitors Research (Shopify)</h2>
-                            <a href="#"><img src="images/arrow.svg" alt=""></a>
+                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae.</p>
                     </div>
@@ -407,7 +407,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>Best Competitors (Shopify)</h2>
-                            <a href="#"><img src="images/arrow.svg" alt=""></a>
+                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae.</p>
                     </div>
@@ -425,7 +425,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>TikTok Scanner</h2>
-                            <a href="#"><img src="images/arrow.svg" alt=""></a>
+                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>Compare different suppliers to find the best deals and quality.</p>
                     </div>
@@ -442,7 +442,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>Amazon Scanner</h2>
-                            <a href="#"><img src="images/arrow.svg" alt=""></a>
+                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>Monitor supplier activities to ensure timely delivery and quality products.</p>
                     </div>
@@ -459,7 +459,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>Walmart Scanner</h2>
-                            <a href="#"><img src="images/arrow.svg" alt=""></a>
+                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>In-depth research on potential suppliers for Shopify stores.</p>
                     </div>
@@ -475,7 +475,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>Express Scanner</h2>
-                            <a href="#"><img src="images/arrow.svg" alt=""></a>
+                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>In-depth research on potential suppliers for Shopify stores.</p>
                     </div>
@@ -491,13 +491,13 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>Supplier Research</h2>
-                            <a href="#"><img src="images/arrow.svg" alt=""></a>
+                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>In-depth research on potential suppliers for Shopify stores.</p>
                     </div>
                     <div class="service-image">
                         <figure class="image-anime">
-                            <img src="images/service-img-3.jpg" alt="">
+                            <img src="{{asset('images/service-img-3.jpg')}}" alt="">
                         </figure>
                     </div>
                 </div>

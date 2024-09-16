@@ -18,7 +18,7 @@
         <br>
           <div class="con-left">
             <div class="left-column">
-              <img src="./images/ebay.jpg" alt="ebay" width="118.32px" height="45px" style="margin-bottom: 20px;">
+              <img src="{{asset('./images/ebay.jpg')}}" alt="ebay" width="118.32px" height="45px" style="margin-bottom: 20px;">
         
               <h2>Competitor Research</h2>
               
@@ -36,7 +36,7 @@
             </div>
             
             <div class="right-column">
-              <img src="./images/P S.jpg" alt="Example Image">
+              <img src="{{asset('./images/P S.jpg')}}" alt="Example Image">
             </div>
           </div>
          
@@ -44,11 +44,11 @@
 
         <div class="custom-container">
           <div class="custom-image-section">
-            <img src="images/Rectangle.jpg" alt="Main Image" class="custom-main-img">
+            <img src="{{asset('images/Rectangle.jpg')}}" alt="Main Image" class="custom-main-img">
           </div>
           <div class="custom-info-section">
             <div class="custom-overlay-container">
-              <img src="images/shopify.jpg" alt="Title Image" class="custom-title-img">
+              <img src="{{asset('images/shopify.jpg')}}" alt="Title Image" class="custom-title-img">
             </div>
             <h1 class="custom-heading">Competitor Research</h1>
             <p class="custom-text">Drive traffic and sales, ensuring your products are easily discoverable by potential customers.</p>
@@ -77,11 +77,11 @@
 
 <div class="custom-container">
   <div class="custom-image-section">
-    <img src="images/Rectangle.jpg" alt="Main Image" class="custom-main-img">
+    <img src="{{asset('images/Rectangle.jpg')}}" alt="Main Image" class="custom-main-img">
   </div>
   <div class="custom-info-section">
     <div class="custom-overlay-container">
-      <img src="images/shopify.jpg" alt="Title Image" class="custom-title-img">
+      <img src="{{asset('images/shopify.jpg')}}" alt="Title Image" class="custom-title-img">
     </div>
     <h1 class="custom-heading">Shopify best competitors</h1>
     <p class="custom-text">Drive traffic and sales, ensuring your products are easily discoverable by potential customers.</p>

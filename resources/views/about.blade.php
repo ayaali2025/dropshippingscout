@@ -47,7 +47,7 @@
                 <!-- Hero Image Start -->
                 <div class="hero-image">
                     <figure class="image-anime reveal">
-                        <img src="images/hero-img.jpg" alt="">
+                        <img src="{{asset('images/hero-img.jpg')}}" alt="">
                     </figure>                            
                 </div>
                 <!-- Hero Image End -->
@@ -66,7 +66,7 @@
                 <!-- Hero Image Start -->
                 <div class="hero-image">
                     <figure class="image-anime reveal">
-                        <img src="images/vision.jpg" alt="">
+                        <img src="{{asset('images/vision.jpg')}}" alt="">
                     </figure>
                 </div>
                 <!-- Hero Image End -->
@@ -108,7 +108,7 @@
             <div class="d-flex align-items-start">
                 <div class="icon">
                     <!-- SVG Icon 1 -->
-                    <img src="./images/stars.svg" alt="">
+                    <img src="{{asset('./images/stars.svg')}}" alt="">
                 </div>
                 <div>
                     <h3 class="section-title">Latest trends on eBay</h3>
@@ -120,7 +120,7 @@
             <div class="d-flex align-items-start">
                 <div class="icon">
                     <!-- SVG Icon 2 -->
-                    <img src="./images/stars.svg" alt="">
+                    <img src="{{asset('./images/stars.svg')}}" alt="">
                 </div>
                 <div>
                     <h3 class="section-title">Popular dropshipping products</h3>
@@ -132,7 +132,7 @@
             <div class="d-flex align-items-start">
                 <div class="icon">
                     <!-- SVG Icon 3 -->
-                  <img src="./images/stars.svg" alt="">
+                  <img src="{{asset('./images/stars.svg')}}" alt="">
                 </div>
                 <div>
                     <h3 class="section-title">eBay sellers & niches</h3>
@@ -147,7 +147,7 @@
         <div class="col-md-4 mb-4">
             <div class="d-flex align-items-start">
                 <div class="icon">
-                    <img src="./images/stars.svg" alt="">
+                    <img src="{{asset('./images/stars.svg')}}" alt="">
                 </div>
                 <div>
                     <h3 class="section-title">Competitive advantage</h3>
@@ -159,7 +159,7 @@
             <div class="d-flex align-items-start">
                 <div class="icon">
                     <!-- SVG Icon 5 -->
-                    <img src="./images/stars.svg" alt="">
+                    <img src="{{asset('./images/stars.svg')}}" alt="">
                 </div>
                 <div>
                     <h3 class="section-title">Create titles for your products</h3>
@@ -171,7 +171,7 @@
             <div class="d-flex align-items-start">
                 <div class="icon">
                     <!-- SVG Icon 6 -->
-                   <img src="./images/stars.svg" alt="">
+                   <img src="{{asset('./images/stars.svg')}}" alt="">
                 </div>
                 <div>
                     <h3 class="section-title">Increase sales listing</h3>

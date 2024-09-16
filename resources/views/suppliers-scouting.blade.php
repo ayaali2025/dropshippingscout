@@ -22,7 +22,7 @@
 
         <div class="con-left">
             <div class="left-column">
-                <img src="./images/tiktok (2).svg" style="margin-bottom: 20px;">
+                <img src="{{asset('./images/tiktok (2).svg')}}" style="margin-bottom: 20px;">
                 <h2 style="font-size: 52px;">TikTok Scanner</h2>
                 <br>
                 <p style="color: #1E3F5B; font-size: 16px; font-weight: 550;">
@@ -51,7 +51,7 @@
             <div class="unique-row">
                 <div class="unique-column">
                     <div class="unique-rectangle">
-                        <img src="./images/aliexpress-logo.jpg" alt="Small Title Image" class="unique-small-image">
+                        <img src="{{asset('./images/aliexpress-logo.jpg')}}" alt="Small Title Image" class="unique-small-image">
                         <img src="{{asset('images/AliExpress-Scanner.jpeg')}}" alt="Main Image" class="unique-main-image">
                         <p class="unique-text">identify niche markets or customer segments that are not being targeted</p>
                         <button class="unique-read-more">Read More</button>
@@ -59,7 +59,7 @@
                 </div>
                 <div class="unique-column">
                     <div class="unique-rectangle">
-                        <img src="./images/walmart.jpg" alt="Small Title Image" class="unique-small-image">
+                        <img src="{{asset('./images/walmart.jpg')}}" alt="Small Title Image" class="unique-small-image">
                         <img src="{{asset('images/Walmart-Scanner.jpeg')}}" alt="Main Image" class="unique-main-image">
                         <p class="unique-text">scouting efforts can lead to increased revenue streams and business growth.</p>
                         <button class="unique-read-more">Read More</button>
@@ -67,7 +67,7 @@
                 </div>
                 <div class="unique-column">
                     <div class="unique-rectangle">
-                        <img src="./images/amazon-logo.jpg" alt="Small Title Image" class="unique-small-image">
+                        <img src="{{asset('./images/amazon-logo.jpg')}}" alt="Small Title Image" class="unique-small-image">
                         <img src="{{asset('images/Amazon-Scanner.jpeg')}}" alt="Main Image" class="unique-main-image">
                         <p class="unique-text">start scouting for products, clearly define your business goals and objectives.</p>
                         <button class="unique-read-more">Read More</button>
@@ -89,7 +89,7 @@
 
         <div class="con-left">
             <div class="left-column">
-                <img src="./images/aliexpress-logo.jpg" width="200px" height="45px" style="margin-bottom: 20px;">
+                <img src="{{asset('./images/aliexpress-logo.jpg')}}" width="200px" height="45px" style="margin-bottom: 20px;">
                 <h2 style="font-size: 52px;">Product Research</h2>
                 <br>
                 <p style="color: #1E3F5B; font-size: 16px; font-weight: 550;">
@@ -103,7 +103,7 @@
             </div>
             
             <div class="right-column">
-                <img src="./images/P S.jpg" alt="Example Image">
+                <img src="{{asset('./images/P S.jpg')}}" alt="Example Image">
             </div>
         </div>
 
@@ -111,11 +111,11 @@
 
         <div class="custom-container">
             <div class="custom-image-section">
-                <img src="images/Rectangle.jpg" alt="Main Image" class="custom-main-img">
+                <img src="{{asset('images/Rectangle.jpg')}}" alt="Main Image" class="custom-main-img">
             </div>
             <div class="custom-info-section">
                 <div class="custom-overlay-container">
-                    <img src="./images/aliexpress-logo.jpg" width="200px" height="45px">
+                    <img src="{{asset('./images/aliexpress-logo.jpg')}}" width="200px" height="45px">
                 </div>
                 <h1 class="custom-heading">Supplier Scouting</h1>
                 <p class="custom-text">Drive traffic and sales, ensuring your products are easily discoverable by potential customers.</p>

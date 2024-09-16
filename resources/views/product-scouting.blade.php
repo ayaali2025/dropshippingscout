@@ -35,7 +35,7 @@
             </div>
             
             <div class="right-column">
-              <img src="./images/P S.jpg" alt="Example Image">
+              <img src="{{asset('./images/P S.jpg')}}" alt="Example Image">
             </div>
           </div>
         
@@ -48,7 +48,7 @@
             <div class="unique-row">
                 <div class="unique-column">
                     <div class="unique-rectangle">
-                         <img src="images/ProductScouting-eBay.jpeg" alt="Main Image" class="unique-main-image">
+                         <img src="{{asset('images/ProductScouting-eBay.jpeg')}}" alt="Main Image" class="unique-main-image">
                         <p class="unique-text">identify niche markets or customer segments
                            that are not being targeted</p>
                         <button class="unique-read-more">Read More</button>
@@ -56,7 +56,7 @@
                 </div>
                 <div class="unique-column">
                     <div class="unique-rectangle">
-                         <img src="images/ProductScouting-Shopify.jpeg" alt="Main Image" class="unique-main-image">
+                         <img src="{{asset('images/ProductScouting-Shopify.jpeg')}}" alt="Main Image" class="unique-main-image">
                         <p class="unique-text">scouting efforts can lead to increased revenue 
                           streams and business growth.</p>
                         <button class="unique-read-more">Read More</button>
@@ -68,7 +68,7 @@
 
         <div class="custom-container">
           <div class="custom-image-section">
-            <img src="images/ProductScouting-eBay.jpeg" alt="Main Image" class="custom-main-img">
+            <img src="{{asset('images/ProductScouting-eBay.jpeg')}}" alt="Main Image" class="custom-main-img">
           </div>
           <div class="custom-info-section">
              
@@ -105,7 +105,7 @@
   <div class="unique-row" style="align-content: center">
       <div class="unique-column">
           <div class="unique-rectangle">
-               <img src="images/category-research.jpeg" alt="Main Image" class="unique-main-image">
+               <img src="{{asset('images/category-research.jpeg')}}" alt="Main Image" class="unique-main-image">
               <p class="unique-text">identify niche markets or customer segments
                  that are not being targeted</p>
               <button class="unique-read-more">Read More</button>
@@ -134,7 +134,7 @@
     border: 1px solid #AFB9FA; border-radius: 8px; opacity: 1;">Read More</button>
   </div>
   <div class="right-column">
-    <img src="./images/title-builder.jpg" alt="Example Image">
+    <img src="{{asset('./images/title-builder.jpg')}}" alt="Example Image">
   </div>
 </div>
  

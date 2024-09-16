@@ -31,7 +31,7 @@
               border: 1px solid #3545D6; border-radius: 8px; opacity: 1;">Earn NOW!</button>
             </div>
             <div class="right-column">
-              <img src="./images/Group 7747@2x.png" alt="Example Image">
+              <img src="{{asset('./images/Group 7747@2x.png')}}" alt="Example Image">
             </div>
           </div>
         
@@ -44,7 +44,7 @@
               <div class="custom-column">
                 <div class="custom-box">
                   <div class="image-wrapper">
-                    <img src="./images/hand2.jpg" alt="Image 1">
+                    <img src="{{asset('./images/hand2.jpg')}}" alt="Image 1">
                   </div>
                   <div class="custom-content">
                     <h4 style="padding-bottom: 10px;">Join as an Affiliate</h4>
@@ -55,7 +55,7 @@
               <div class="custom-column">
                 <div class="custom-box">
                   <div class="image-wrapper">
-                    <img src="./images/ro.jpg" alt="Image 2">
+                    <img src="{{asset('./images/ro.jpg')}}" alt="Image 2">
                   </div>
                   <div class="custom-content">
                     <h4 style="padding-bottom: 10px;">Promote Scout</h4>
@@ -66,7 +66,7 @@
               <div class="custom-column">
                 <div class="custom-box">
                   <div class="image-wrapper">
-                    <img src="./images/money-hand.jpg" alt="Image 3">
+                    <img src="{{asset('./images/money-hand.jpg')}}" alt="Image 3">
                   </div>
                   <div class="custom-content">
                     <h4 style="padding-bottom: 10px;">Earn NOW!</h4>
@@ -97,7 +97,7 @@
                     <div class="d-flex align-items-start">
                         <div class="icon">
                             <!-- SVG Icon 1 -->
-                            <img src="./images/coin$.jpg" alt="">
+                            <img src="{{asset('./images/coin$.jpg')}}" alt="">
                         </div>
                         <div>
                             <h3 class="section-title">User-Friendly Affiliate Dashboard</h3>
@@ -109,7 +109,7 @@
                     <div class="d-flex align-items-start">
                         <div class="icon">
                             <!-- SVG Icon 2 -->
-                            <img src="./images/coin$.jpg" alt="">
+                            <img src="{{asset('./images/coin$.jpg')}}" alt="">
                         </div>
                         <div>
                             <h3 class="section-title">Marketing Materials</h3>
@@ -122,7 +122,7 @@
                     <div class="d-flex align-items-start">
                         <div class="icon">
                             <!-- SVG Icon 3 -->
-                            <img src="./images/coin$.jpg" alt="">
+                            <img src="{{asset('./images/coin$.jpg')}}" alt="">
                         </div>
                         <div>
                             <h3 class="section-title">Quick Payouts</h3>
@@ -137,7 +137,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="d-flex align-items-start">
                         <div class="icon">
-                            <img src="./images/coin$.jpg" alt="">
+                            <img src="{{asset('./images/coin$.jpg')}}" alt="">
                         </div>
                         <div>
                             <h3 class="section-title">Global Reach</h3>
@@ -149,7 +149,7 @@
                     <div class="d-flex align-items-start">
                         <div class="icon">
                             <!-- SVG Icon 5 -->
-                            <img src="./images/coin$.jpg" alt="">
+                            <img src="{{asset('./images/coin$.jpg')}}" alt="">
                         </div>
                         <div>
                             <h3 class="section-title">Exclusive Promotions</h3>
@@ -161,7 +161,7 @@
                     <div class="d-flex align-items-start">
                         <div class="icon">
                             <!-- SVG Icon 6 -->
-                            <img src="./images/coin$.jpg" alt="">
+                            <img src="{{asset('./images/coin$.jpg')}}" alt="">
                         </div>
                         <div>
                             <h3 class="section-title">Ongoing Earnings</h3>
@@ -174,7 +174,7 @@
                     <div class="d-flex align-items-start">
                         <div class="icon">
                             <!-- SVG Icon 6 -->
-                            <img src="./images/coin$.jpg" alt="">
+                            <img src="{{asset('./images/coin$.jpg')}}" alt="">
                         </div>
                         <div>
                             <h3 class="section-title"> Real-Time Tracking</h3>

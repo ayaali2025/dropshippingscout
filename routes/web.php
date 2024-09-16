@@ -26,6 +26,10 @@ Route::prefix('admin')->name('admin.')->group(function () {
 // Authentication Routes For Admin
 Route::get('admin/site/login', [LoginController::class, 'showLoginForm'])->name('Adminlogin');
 Route::post('admin/site/login', [LoginController::class, 'login'])->name('Adminlogin');
+
+Route::get('/login', function () {
+    return redirect('https://app.dropshippingscout.com/login');
+});
 //Route::get('register', [RegisterController::class, 'showRegistrationForm'])->name('register');
 //Route::post('register', [RegisterController::class, 'register']);
 // Route::get('new-password', function () {
