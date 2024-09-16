@@ -44,7 +44,7 @@
                 
                 <div class="form-group mb-3" id="video-input" style="display: none;">
                     <label for="video_url" class="form-label">YouTube Video URL</label>
-                    <input type="url" class="form-control" id="video_url" name="video_url" placeholder="https://www.youtube.com/watch?v=xyz">
+                    <input type="text" class="form-control" id="video_url" name="video_url" placeholder="https://www.youtube.com/watch?v=xyz">
                 </div>
               
 

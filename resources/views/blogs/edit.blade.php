@@ -52,7 +52,7 @@
                 
                 <div class="form-group mb-3" id="video-input" style="{{ $blog->video_url ? '' : 'display: none;' }}">
                     <label for="video_url" class="form-label">YouTube Video URL</label>
-                    <input type="url" class="form-control" id="video_url" name="video_url" value="{{ $blog->video_url }}">
+                    <input type="text" class="form-control" id="video_url" name="video_url" value="{{ $blog->video_url }}">
                 </div>
                 
             
