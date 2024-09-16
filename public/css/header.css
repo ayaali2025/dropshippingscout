@@ -382,3 +382,15 @@ display: none; /* Hides the paragraph element */
 }
 
 }
+
+.magicButtons{
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+  .magicButtons{
+    display: block;
+  }
+  
+  }
+  
