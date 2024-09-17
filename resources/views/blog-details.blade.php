@@ -41,13 +41,13 @@
         <div class="sidebar">
             <div class="social">
                 <ul>
-                    <li><a href="#"><img src="{{ asset('images/Tiktok.svg') }}" alt="Tiktok"></a></li>
-                    <li><a href="#"><img src="{{ asset('images/Whatsapp.svg') }}" alt="Whatsapp"></a></li>
-                    <li><a href="#"><img src="{{ asset('images/Linkedin.svg') }}" alt="Linkedin"></a></li>
-                    <li><a href="#"><img src="{{ asset('images/Instagram.svg') }}" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="{{ asset('images/YouTube.svg') }}" alt="YouTube"></a></li>
-                    <li><a href="#"><img src="{{ asset('images/X.svg') }}" alt="Twitter"></a></li>
-                    <li><a href="#"><img src="{{ asset('images/facebook.svg') }}" alt="Facebook"></a></li>
+                    <li><a href="https://www.tiktok.com/@dropshipping.scout"><img src="{{ asset('images/Tiktok.svg') }}" alt=""></a></li> 
+                    {{-- <li><a href="#"><img src="{{ asset('images/Whatsapp.svg') }}" alt=""></a></li> --}}
+                    <li><a href="https://www.linkedin.com/company/dropshipping-scout"><img src="{{ asset('images/Linkedin.svg') }}" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/dropshipping.scout?igsh=bWQ0cWgwOW4zYzl5"><img src="{{ asset('images/Instagram.svg') }}" alt=""></a></li>
+                    <li><a href="https://youtube.com/@dropshipping.scout.?feature=shared"><img src="{{ asset('images/YouTube.svg') }}" alt=""></a></li>
+                    {{-- <li><a href="#"><img src="{{ asset('images/X.svg') }}" alt=""></a></li> --}}
+                    <li><a href="https://www.facebook.com/dropshipping.scout?mibextid=ZbWKwL"><img src="{{ asset('images/facebook.svg') }}" alt=""></a></li>
                 </ul>
             </div>
 

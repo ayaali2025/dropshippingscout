@@ -79,7 +79,7 @@
               
             </div>
             <div class="button-container">
-                <button class="btn-default">Earn NOW!</button>
+                <button class="btn-default">Start For 1$</button>
           </div>
          
 

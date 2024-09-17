@@ -98,7 +98,7 @@
 <section class="container my-5">
     <!-- Centered Title and Subtitle -->
     <div class="centered-title text-center mb-4">
-        <h1 style="color: #1E3F5B; font-size: 60px; font-weight: bold;">Benefits of selling your products <br> With us</h1>
+        <h1 style="color: #1E3F5B; font-size: 50px; font-weight: bold;padding-bottom:10px">Benefits of selling your products <br> With us</h1>
         <h5 class="section-subtitle">in virtual space through communication platforms.</h5>
     </div>
     
