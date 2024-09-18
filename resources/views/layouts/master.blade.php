@@ -103,8 +103,7 @@ function toggleVisibility(event, id) {
 <!-- SmoothScroll -->
 <script src="{{asset('js/SmoothScroll.js')}}"></script>
 <!-- MagicCursor js file -->
-<script src="{{asset('js/gsap.min.js')}}"></script>
-<script src="{{asset('js/magiccursor.js')}}"></script>
+
 <!-- Text Effect js file -->
 <script src="{{asset('js/SplitText.js')}}"></script>
 <script src="{{asset('js/ScrollTrigger.min.js')}}"></script>
