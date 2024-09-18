@@ -1,64 +1,19 @@
-<!DOCTYPE html>
-<html lang="zxx">
-<head>
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="Awaiken">
-	<!-- Page Title -->
-	<title>Scout</title>
-	<!-- Favicon Icon -->
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-	<!-- Google Fonts Css-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
-	<!-- Bootstrap Css -->
-	<link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" media="screen">
-	<!-- SlickNav Css -->
-	<link href="{{asset('css/slicknav.min.css')}}" rel="stylesheet">
-	<!-- Swiper Css -->
-	<link rel="stylesheet" href="{{asset('css/swiper-bundle.min.css')}}">
-	<!-- Font Awesome Icon Css-->
-	<link href="{{asset('css/all.css')}}" rel="stylesheet" media="screen">
-	<!-- Animated Css -->
-	<link href="{{asset('css/animate.css')}}" rel="stylesheet">
-	<!-- Magnific Popup Core Css File -->
-	<link rel="stylesheet" href="{{asset('css/magnific-popup.css')}}">
-	<!-- Main Custom Css -->
-	<link href="{{asset('css/custom.css')}}" rel="stylesheet" media="screen">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/privacy-policy.css')}}">
  
-    <style>
-        h5{
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-        p{
-            padding-top: 10px;
-        }
-    </style>
+@extends('layouts.master')
 
+@section('title', $page->title)
+@section('meta_description', $page->meta_description)
+@section('meta_keywords', $page->meta_keywords)
+@section('meta_author', $page->meta_author)
 
-</head>
-<body class="tt-magic-cursor">
+@section('styles')
+<!-- Custom CSS for this view -->
+<link href="{{asset('css/privacy-policy.css')}}" rel="stylesheet">
+@endsection
 
-    <div class="gredient">
-
-
-    <!-- Header Start -->
-	@include('header')
-	<!-- Header End -->
-    <hr style="color: #f5f6fc8f;">
-
-
+@section('content')
+   
     <div class="container">
-        <h1 class="title">Privacy Policy</h1>
-        <br>
-
         <div class="content">
             <h5 class="privacy1">Introduction</h5>
             <p>At DROPSHIPPINGSCOUT.COM, we are committed to protecting the privacy and security of our users' personal information. This Privacy Policy outlines our practices concerning the collection, use, and disclosure of personal information provided by users of our services, including our website (www.Dropshippingscout.com) and any related services (collectively, the "Service"). By accessing or using our Service, you agree to the terms of this Privacy Policy.</p>           
@@ -127,39 +82,4 @@
 
                   
 </div>
-
-    <!-- Footer Start -->
-    @include('footer')
-    <!-- Footer End -->
-
-     <!-- Jquery Library File -->
-     <script src="{{asset('js/jquery-3.7.1.min.js')}}"></script>
-     <!-- Bootstrap js file -->
-     <script src="{{asset('js/bootstrap.min.js')}}"></script>
-     <!-- Validator js file -->
-     <script src="{{asset('js/validator.min.js')}}"></script>
-     <!-- SlickNav js file -->
-     <script src="{{asset('js/jquery.slicknav.js')}}"></script>
-     <!-- Swiper js file -->
-     <script src="{{asset('js/swiper-bundle.min.js')}}"></script>
-     <!-- Counter js file -->
-     <script src="{{asset('js/jquery.waypoints.min.js')}}"></script>
-     <script src="{{asset('js/jquery.counterup.min.js')}}"></script>
-     <!-- Isotop js file -->
-     <script src="{{asset('js/isotope.min.js')}}"></script>
-     <!-- Magnific js file -->
-     <script src="{{asset('js/jquery.magnific-popup.min.js')}}"></script>
-     <!-- SmoothScroll -->
-     <script src="{{asset('js/SmoothScroll.js')}}"></script>
-     <!-- MagicCursor js file -->
-     <script src="{{asset('js/gsap.min.js')}}"></script>
-     <script src="{{asset('js/magiccursor.js')}}"></script>
-     <!-- Text Effect js file -->
-     <script src="{{asset('js/SplitText.js')}}"></script>
-     <script src="{{asset('js/ScrollTrigger.min.js')}}"></script>
-     <!-- Wow js file -->
-     <script src="{{asset('js/wow.js')}}"></script>
-     <!-- Main Custom js file -->
-     <script src="{{asset('js/function.js')}}"></script>
-</body>
-</html>
+@endsection

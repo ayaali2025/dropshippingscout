@@ -134,7 +134,7 @@
                     <!-- About Us Image Start -->
                     <div class="about-image">
                         <div class="about-img">
-                            <figure class="image-anime reveal">
+                            <figure class="image-anime reveal" style="visibility: visible;">
                                 <img src="{{asset('images/whyScout.jpeg')}}" alt="">
                             </figure>
                         </div>
