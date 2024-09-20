@@ -660,7 +660,7 @@
             <div class="unique-text">
                 <h2 class="boostSalesHead">Want to boost sales?</h2>
                 <p>Start Your Dropshipping Journey Today</p>
-                <a href="#" class="unique-button">Start 1$</a>
+                <a href="https://app.dropshippingscout.com/pricing" class="unique-button">Start 1$</a>
             </div>
         </div>
     </div>

@@ -940,3 +940,15 @@ margin-left: 8px;
       font-size: 19px !important;
   }
 }
+
+.post-item-body h3{
+  text-align: center;
+}
+
+.post-item-body {
+  margin: 10px;
+}
+
+.our-services {
+    padding: 0px 0px 0px; 
+}

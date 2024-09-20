@@ -79,7 +79,9 @@
               
             </div>
             <div class="button-container">
+                <a href="https://app.dropshippingscout.com/pricing">
                 <button class="btn-default">Start For 1$</button>
+                </a>
           </div>
          
 

@@ -82,7 +82,9 @@
                 <h2>Reach out to suppliers for details on their offerings and pricing.</h2>
             </div>
             <div class="button-container">
+                <a href="https://app.dropshippingscout.com/pricing">
                 <button class="btn-default">Start for $1 Trial</button>
+            </a>
             </div>
         </div>
         <!-- Latest News Section End -->

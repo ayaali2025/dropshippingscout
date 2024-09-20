@@ -55,21 +55,28 @@
                     <input type="text" class="form-control" id="video_url" name="video_url" value="{{ $blog->video_url }}">
                 </div>
                 
-            
-                <!-- Likes -->
-                <div class="form-group mb-3">
-                    <label for="likes" class="form-label">Likes</label>
-                    <input type="number" class="form-control" id="likes" name="likes" value="{{ $blog->likes }}" required>
-                </div>
-
-
+             
                 <!-- Slug -->
                 <div class="form-group mb-3">
                     <label for="slug" class="form-label">Slug</label>
                     <input type="text" class="form-control" id="slug" name="slug" value="{{ $blog->slug }}" required>
                 </div>
 
-                <!-- Content Sections (Handled by TinyMCE) -->
+                <div class="form-group">
+                    <label for="meta_description">Meta Description</label>
+                    <input type="text" class="form-control" id="meta_description" name="meta_description" value="{{ $blog->meta_description }}" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="meta_keywords">Meta Keywords</label>
+                    <input type="text" class="form-control" id="meta_keywords" name="meta_keywords" value="{{ $blog->meta_keywords }}" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="meta_author">Meta Author</label>
+                    <input type="text" class="form-control" id="meta_author" name="meta_author" value="{{ $blog->meta_author }}" required>
+             
+                    <!-- Content Sections (Handled by TinyMCE) -->
                 <div id="content-sections" class="mb-3">
                     <h4>Content Sections</h4>
                     <textarea class="form-control tinymce-editor" name="content" rows="10" required>{{ $blog->content }}</textarea>
@@ -85,6 +92,8 @@
                         <option value="Aliexpress" {{ $blog->category == 'Aliexpress' ? 'selected' : '' }}>Aliexpress</option>
                         <option value="Walmart" {{ $blog->category == 'Walmart' ? 'selected' : '' }}>Walmart</option>
                         <option value="Amazon" {{ $blog->category == 'Amazon' ? 'selected' : '' }}>Amazon</option>
+                        <option value="Tiktook" {{ $blog->category == 'Tiktook' ? 'selected' : '' }}>Tiktook</option>
+
                         <!-- Add more categories as needed -->
                     </select>
                 </div>

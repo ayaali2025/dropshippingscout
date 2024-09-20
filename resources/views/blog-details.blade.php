@@ -21,9 +21,13 @@
         <ul class="info-list">
             <li><span class="date">{{ $blog->publish_date }}</span></li>
             <li><span class="author">By: {{ $blog->author }}</span></li>
-            <li><img src="{{ asset('images/heart.svg') }}" alt="Likes"><span class="number">{{ $blog->likes }}</span></li>
+            <li>
+                <img id="like-button" src="{{ asset('images/heart.svg') }}" alt="Likes" style="cursor: pointer;">
+                <span id="like-count" class="number">{{ $blog->likes }}</span>
+            </li>
         </ul>
     </div>
+    
 
              @if ($blog->video_url)
                 <iframe width="100%" height="415" src="https://www.youtube.com/embed/{{ \Str::after($blog->video_url, 'v=') }}" frameborder="0" allowfullscreen></iframe>
@@ -68,4 +72,27 @@
 </div>               
 </div>
 
+<script>
+    document.getElementById('like-button').addEventListener('click', function() {
+    const blogId = {{ $blog->id }};
+    const likeButton = document.getElementById('like-button');
+    const likeCount = document.getElementById('like-count');
+
+    fetch(`/blogs/${blogId}/like`, {
+        method: 'POST',
+        headers: {
+            'X-CSRF-TOKEN': '{{ csrf_token() }}',
+            'Content-Type': 'application/json'
+        },
+    })
+    .then(response => response.json())
+    .then(data => {
+        likeCount.textContent = data.likes; // Update the likes count
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
+
+</script>
 @endsection

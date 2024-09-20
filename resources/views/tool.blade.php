@@ -61,13 +61,14 @@
             {{$page->paragraph_2}}
         </p>
         <br>
-        <button class="btn-default" style="background: var(--primary-500) 0% 0% no-repeat padding-box;
+      <a href="https://app.dropshippingscout.com/pricing">  <button class="btn-default" style="background: var(--primary-500) 0% 0% no-repeat padding-box;
             border: 1px solid var(--primary-500);
             color: white;
             background: #3545D6 0% 0% no-repeat padding-box;
             border: 1px solid #AFB9FA; border-radius: 8px; font-size: 13px;">
             start for $1 Trial
         </button>
+    </a>
     </div>
 </div>
 

@@ -34,7 +34,9 @@ class BlogController extends Controller
             'media_type' => 'required|string|in:image,video',
             'image' => 'nullable|image|max:2048',
             'video_url' => 'nullable',
-            'likes' => 'required|integer|min:0',
+            'meta_description' => 'nullable',
+            'meta_keywords' => 'nullable',
+            'meta_author' => 'nullable',
             'slug' => 'required|string|max:60|unique:blogs',
             'category' => 'required|string|max:255',
             'content' => 'required|string',
@@ -99,8 +101,10 @@ class BlogController extends Controller
             'media_type' => 'required|string|in:image,video',
             'image' => 'nullable|image|max:2048',
             'video_url' => 'nullable',
-            'likes' => 'required|integer|min:0',
             'slug' => 'required|string|max:60|unique:blogs,slug,' . $blog->id,
+            'meta_description' => 'nullable',
+            'meta_keywords' => 'nullable',
+            'meta_author' => 'nullable',
             'category' => 'required|string|max:255',
             'content' => 'required|string',
         ]);
@@ -124,7 +128,13 @@ class BlogController extends Controller
     }
     
     
-    
+    public function like($id)
+    {
+       $blog = Blog::findOrFail($id);
+       $blog->increment('likes'); // Increment the likes count
+       return response()->json(['likes' => $blog->likes]); // Return the updated likes count
+     }
+
     
 
     public function destroy(Blog $blog)

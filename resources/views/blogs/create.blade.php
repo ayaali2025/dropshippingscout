@@ -53,9 +53,19 @@
                     <input type="text" class="form-control" id="slug" name="slug" required>
                 </div>
 
-                <div class="form-group mb-3">
-                    <label for="likes" class="form-label">Likes</label>
-                    <input type="number" class="form-control" id="likes" name="likes" value="0" required>
+                <div class="form-group">
+                    <label for="meta_description">Meta Description</label>
+                    <input type="text" class="form-control" id="meta_description" name="meta_description" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="meta_keywords">Meta Keywords</label>
+                    <input type="text" class="form-control" id="meta_keywords" name="meta_keywords" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="meta_author">Meta Author</label>
+                    <input type="text" class="form-control" id="meta_author" name="meta_author" required>
                 </div>
 
                 <div class="form-group mb-3">
@@ -72,6 +82,8 @@
                         <option value="Aliexpress">Aliexpress</option>
                         <option value="Walmart">Walmart</option>
                         <option value="Amazon">Amazon</option>
+                        <option value="Tiktook">Tiktook</option>
+
                     </select>
                 </div>
 

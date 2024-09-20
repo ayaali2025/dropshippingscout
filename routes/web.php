@@ -47,6 +47,8 @@ Route::get('/pricing', function () {
 // User routes
 Route::get('/blogs', [BlogController::class, 'userIndex'])->name('blogs.userIndex'); // Show all blogs
 Route::get('/blogs/{slug}', [BlogController::class, 'show'])->name('blogs.show');
+Route::post('/blogs/{id}/like', [BlogController::class, 'like'])->name('blogs.like');
+
 
 // Admin routes
 Route::get('/admin/blogs', [BlogController::class, 'index'])->name('blogs.index');
