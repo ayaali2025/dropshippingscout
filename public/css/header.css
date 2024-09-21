@@ -406,3 +406,11 @@ header.main-header .header-sticky.active {
     z-index: 1000;
     top: 0;
 }
+
+header.main-header .header-sticky.hide {
+    padding: 0px 0;
+}
+
+.navbar {
+     padding: 0px 0; 
+}

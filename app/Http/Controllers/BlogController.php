@@ -147,7 +147,9 @@ class BlogController extends Controller
     public function userIndex()
     {
         // Retrieve all blogs
-        $blogs = Blog::all();
+        $blogs = Blog::whereNotNull('image')
+                 ->whereNull('video_url')
+                 ->get();
         
         // Retrieve the page data where 'view_name' equals 'blogs'
         $page = Page::where('view_name', 'blogs')->first();
@@ -161,6 +163,18 @@ class BlogController extends Controller
         // Pass both blogs and page data to the view
         return view('blogs', compact('blogs', 'page'));
     }
+
+    public function userTutorial()
+   {
+    // Retrieve blogs where video_url is not null and image is null
+    $blogs = Blog::whereNotNull('video_url')
+                 ->whereNull('image')
+                 ->get();
+                 
+    // Pass both blogs and page data to the view
+    return view('blogs', compact('blogs'));
+   }
+
     
 
     public function show($slug)

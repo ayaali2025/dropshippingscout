@@ -109,3 +109,36 @@ h4{
     line-height: inherit;
     font-size: 16px;
 }
+
+.blog-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid #ddd; /* Optional: Add a subtle border around each blog item */
+    border-radius: 8px; /* Rounded corners for the blog item */
+    padding: 15px; /* Padding inside the blog item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+    transition: box-shadow 0.3s ease;
+    overflow: hidden; /* Ensure content does not overflow */
+}
+
+.post-item-body {
+    flex-grow: 1;
+}
+
+.category-label {
+    position: absolute;
+    bottom: 15px; /* Adjust this value to control distance from the bottom */
+    left: 15px; /* Adjust this value to control distance from the left */
+    color: #638C57; /* Light green background */
+   background-color: #C2F750; /* Darker green text color */
+    border-radius: 15px; /* Rounded borders */
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.blog-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hover effect */
+}
