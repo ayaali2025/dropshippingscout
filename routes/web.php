@@ -6,8 +6,8 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\FaqController;
-use App\Http\Controllers\PricingController;
 use App\Http\Controllers\toolsController;
+use Illuminate\Support\Facades\Response;
 
 
 #home page route
@@ -15,12 +15,19 @@ Route::get("/", function(){
     $home_page= new PagesController;
     return $home_page->show('index');
 });
-// Page Routes
-
+ 
 
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::resource('pages', PagesController::class);
 });
+
+// sitemap 
+Route::get('/sitemap.xml', function() {
+    return Response::file(public_path('sitemap.xml'), [
+        'Content-Type' => 'application/xml'
+    ]);
+});
+
 
 
 // Authentication Routes For Admin
