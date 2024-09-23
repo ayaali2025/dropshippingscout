@@ -316,3 +316,7 @@ h2.text-anime-style-3 {
     font-size: 0.9rem;
     text-align: center;
 }
+
+.blog-item {
+height: 100%;
+}
