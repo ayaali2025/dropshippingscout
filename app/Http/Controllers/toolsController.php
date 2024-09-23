@@ -40,7 +40,7 @@ class toolsController extends Controller
     
 
         // Pass the page data to the view
-        return view('tool', compact('page'));
+        return view('tool', compact('page','Faq'));
     }
 
     public function create()
