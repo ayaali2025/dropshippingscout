@@ -218,7 +218,8 @@ h3{
 }
 
 .sidebar ul li a {
-font-size: 15px
+font-size: 13px;
+font-weight: 100;
 }
 @media (max-width: 768px) {
   .rowElements {
@@ -271,4 +272,35 @@ h2,h3,h4,h5{
   
 }
 
+}
+
+.title-with-lines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ensure the container takes full width */
+}
+
+.line-left, .line-right {
+    content: '';
+    flex: 1; /* Make the lines flexible to take available space */
+    height: 1px;
+    background-color: #ccc; /* Change to the color of your choice */
+    margin: 0 30px; /* Adjust margin for spacing between lines and title */
+}
+
+h2.text-anime-style-3 {
+    font-size: 24px;
+    color: #333; /* Your preferred text color */
+    margin: 0; /* Remove default margin */
+    white-space: nowrap; /* Prevents the text from wrapping */
+    text-align: center;
+}
+
+.latest-news {
+    background: none;
+}
+
+.section-row {
+    margin-bottom: 0px; 
 }

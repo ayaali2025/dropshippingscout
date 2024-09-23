@@ -69,6 +69,66 @@
             
         </div>
     </div>
+
+ <!-- related blogs -->
+ <div class="latest-news">
+    <div class="container homeBlogContainer">
+        <div class="row section-row align-items-center">
+            <div class="col-12">
+                <!-- Section Title Start -->
+                <div class="section-title">
+                    <div class="title-with-lines">
+                        <span class="line-left"></span>
+                        <h2 class="text-anime-style-3">Related blogs</h2>
+                        <span class="line-right"></span>
+                    </div>
+                </div>
+                <!-- Section Title End -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div class="row" style="padding-bottom: 50px;">
+            @foreach ($relatedBlogs as $blog)
+            <div class="col-lg-4 col-md-6">
+                <!-- Blog Item Start -->
+                <div class="blog-item wow fadeInUp" data-wow-delay="0.75s">
+                    <!-- Blog Image Start -->
+                    <div class="post-featured-image">
+                        <a href="{{ route('blogs.show', $blog->slug) }}">
+                        <figure class="image-anime">
+                                <img src="{{ asset('storage/' .$blog->image) }}" alt="{{ $blog->title }}">
+                        </figure>
+                    </a>
+
+                    </div>
+                    <!-- Blog Image End -->
+
+                    <!-- Blog Content Start -->
+                    <div class="post-item-body">
+                                                
+                          <a href="{{ route('blogs.show', $blog->slug) }}" style="color: #1E3F5B">
+                            {{ $blog->created_at }}</a>
+                   
+                            <a href="{{ route('blogs.show', $blog->slug) }}"> <h2 class="homeBlogParagraph">{{ $blog->title }}</h2>    </a>                        
+                    </div>
+                    <!-- Category Label -->
+                    <div class="category-label">
+                        {{ $blog->category }}
+                    </div>
+                    <!-- Blog Content End -->
+                </div>
+                <!-- Blog Item End -->
+            </div>
+        @endforeach
+        </div>
+
+
+
+<!-- end of related blogs -->
+
 </div>               
 </div>
 
