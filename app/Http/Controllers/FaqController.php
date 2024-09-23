@@ -54,7 +54,7 @@ class FaqController extends Controller
         }
 
         $categories = ['General', 'Technical', 'Payment','tool']; // Replace with your categories
-        return view('faqs.create', compact('categories'));
+        return view('Faqs.create', compact('categories'));
     }
 
     public function store(Request $request)
