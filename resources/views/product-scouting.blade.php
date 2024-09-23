@@ -51,8 +51,10 @@
                          <img src="{{asset('images/ProductScouting-eBay.jpeg')}}" alt="Main Image" class="unique-main-image">
                         <p class="unique-text">identify niche markets or customer segments
                            that are not being targeted</p>
-                        <button class="unique-read-more">Read More</button>
-                    </div>
+                           <a href="{{ route('tools-product.show', ['slug' => 'ebay-product-research-tool']) }}">
+                            <button class="unique-read-more">Read More</button>
+                        </a>
+                                            </div>
                 </div>
                 <div class="unique-column">
                     <div class="unique-rectangle">
