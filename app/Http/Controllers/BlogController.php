@@ -21,6 +21,8 @@ class BlogController extends Controller
         }
         
         return view('blogs.create');
+        
+        
     }
 
     public function store(Request $request)
@@ -46,6 +48,7 @@ class BlogController extends Controller
             // Handle image upload
             if ($request->hasFile('image')) {
                 $validatedData['image'] = $request->file('image')->store('images', 'public');
+                
             } else {
                 return back()->withErrors(['image' => 'Image is required if media type is set to image.']);
             }

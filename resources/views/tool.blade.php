@@ -17,6 +17,8 @@
 <h1 class="title" style="margin-top:0px;">{{$page->content_header}}</h1>
 <h5  class="title" style="margin-top:20px ; font-size: 20px; color: #1E3F5B; font-weight: 550;">{{$page->content_subheader}}</h5>
 <br>
+
+@if (!empty($page['image_1']))
   <div class="con-left">
     <div class="left-column">
  
@@ -45,10 +47,11 @@
     </div>
 
   </div>
+  @endif
  
  <br>
 
-
+ @if (!empty($page['image_2']))
  <div class="con-left">
     <div class="right-column">
         <img src="{{ asset('storage/' . $page['image_2']) }}" alt="Example Image">
@@ -71,9 +74,9 @@
     </a>
     </div>
 </div>
+@endif
 
-
-
+@if (!empty($page['image_3']))
 <div class="con-left">
  <div class="left-column">
 
@@ -89,15 +92,13 @@
    background: #3545D6 0% 0% no-repeat padding-box;
    border: 1px solid #AFB9FA; border-radius: 8px;font-size: 13px;">start for $1 Trail</button>
  </div>
-
-
- 
  <div class="right-column">
    <img src="{{ asset('storage/' . $page['image_3']) }}" alt="Example Image">
  </div>
 </div>
+@endif
 
-
+@if (!empty($page['image_4']))
 <div class="con-left">
 <div class="right-column">
     <img src="{{ asset('storage/' . $page['image_4']) }}" alt="Example Image">
@@ -119,6 +120,7 @@
     </button>
 </div>
 </div>
+@endif
 
     <div class="container faqHead" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
 
