@@ -304,3 +304,15 @@ h2.text-anime-style-3 {
 .section-row {
     margin-bottom: 0px; 
 }
+
+.category-label {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #638C57;
+    background-color: #C2F750;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}
