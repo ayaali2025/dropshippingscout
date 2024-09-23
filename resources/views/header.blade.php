@@ -34,8 +34,11 @@
                                         <p>Find your fellow competitors, identify the unique selling proposition of your product.</p></a>
                                         <a href="{{ route('pages.show', ['slug' => $pages->where('view_name', 'suppliers-scouting')->first()->slug]) }}"><h6>Suppliers Scouting</h6>
                                         <p>Find your fellow competitors, identify the unique selling proposition of your product.</p></a>
-                                        <a href="{{ route('pages.show', ['slug' => $pages->where('view_name', 'tool')->first()->slug]) }}"><h6>Free Tools</h6>
+                                      
+                                      <!--   <a href="{{ route('pages.show', ['slug' => $pages->where('view_name', 'tool')->first()->slug]) }}"><h6>Free Tools</h6>
                                         <p>Explore our free tools.</p></a>
+                                       -->
+                                   
                                     </li>
 <!-- Right Section -->
 <li class="dropdown-section right-section">
