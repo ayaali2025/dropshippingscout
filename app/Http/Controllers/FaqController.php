@@ -39,7 +39,7 @@ class FaqController extends Controller
     public function adminIndex()
     {
         if (!$this->isAdmin()) {
-            return redirect()->route('faqs')->with('error', 'Access denied.'); // Redirect to user FAQs if not admin
+            return redirect()->route('Adminlogin')->with('error', 'Access denied.'); 
         }
 
         $faqs = Faq::all();
@@ -50,7 +50,7 @@ class FaqController extends Controller
     public function create()
     {
         if (!$this->isAdmin()) {
-            return redirect()->route('faqs')->with('error', 'Access denied.');
+            return redirect()->route('Adminlogin')->with('error', 'Access denied.'); 
         }
 
         $categories = ['General', 'Technical', 'Payment','tool']; // Replace with your categories
@@ -60,7 +60,7 @@ class FaqController extends Controller
     public function store(Request $request)
     {
         if (!$this->isAdmin()) {
-            return redirect()->route('faqs')->with('error', 'Access denied.');
+            return redirect()->route('Adminlogin')->with('error', 'Access denied.'); 
         }
 
         $request->validate([
@@ -76,7 +76,7 @@ class FaqController extends Controller
     public function edit(Faq $faq)
     {
         if (!$this->isAdmin()) {
-            return redirect()->route('faqs')->with('error', 'Access denied.');
+            return redirect()->route('Adminlogin')->with('error', 'Access denied.'); 
         }
 
         $categories = ['General', 'Technical', 'Payment','tool']; // Replace with your categories
@@ -86,7 +86,7 @@ class FaqController extends Controller
     public function update(Request $request, Faq $faq)
     {
         if (!$this->isAdmin()) {
-            return redirect()->route('faqs')->with('error', 'Access denied.');
+            return redirect()->route('Adminlogin')->with('error', 'Access denied.'); 
         }
 
         $request->validate([
@@ -102,7 +102,7 @@ class FaqController extends Controller
     public function destroy(Faq $faq)
     {
         if (!$this->isAdmin()) {
-            return redirect()->route('faqs')->with('error', 'Access denied.');
+            return redirect()->route('Adminlogin')->with('error', 'Access denied.'); 
         }
 
         $faq->delete();
