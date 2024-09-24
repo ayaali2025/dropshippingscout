@@ -25,45 +25,76 @@
 
     <div class="options-wrapper">
         <div class="options-container">
-            <div class="option">All</div>
-            <div class="option">Getting started</div>
-            <div class="option">Technical issue</div>
-            <div class="option">Payment</div>
+            <div class="option" data-filter="all">All</div>
+            <div class="option" data-filter="general">General</div>
+            <div class="option" data-filter="technical">Technical</div>
+            <div class="option" data-filter="payment">Payment</div>
         </div>
     </div>
-     
 
 
   <!-- FAQs Page Start -->
-<div class="faq-section">
+  <div class="faq-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 offset-lg-1 col-md-12 offset-md-0">
-                @foreach($faqs->groupBy('category') as $category => $categoryFaqs)
-                    <div class="accordion-title"><h3 class="accordion-MainTitle">{{ $category }}</h3></div>
-                    <div class="faq-accordion" id="accordion{{ str_replace(' ', '', $category) }}">
-                        @foreach($categoryFaqs as $faq)
-                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s">
-                                <h2 class="accordion-header" id="heading{{ $faq->id }}">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapse{{ $faq->id }}" aria-expanded="false" aria-controls="collapse{{ $faq->id }}">
-                                        {{ $faq->question }}
-                                    </button>
-                                </h2>
-                                <div id="collapse{{ $faq->id }}" class="accordion-collapse collapse" aria-labelledby="heading{{ $faq->id }}"
-                                    data-bs-parent="#accordion{{ str_replace(' ', '', $category) }}">
-                                    <div class="accordion-body">
-                                        <p>{{ $faq->answer }}</p>
-                                    </div>
+                <div class="accordion-title"><h3 class="accordion-MainTitle"></h3></div>
+                <div class="faq-accordion" id="accordion">
+                    @foreach($faqs as $faq)          
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s" data-category="{{ strtolower(str_replace(' ', '-', $faq->category_name)) }}">
+                            <h2 class="accordion-header" id="heading{{ $faq->id }}">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse{{ $faq->id }}" aria-expanded="false" aria-controls="collapse{{ $faq->id }}">
+                                    {{ $faq->question }}
+                                </button>
+                            </h2>
+                            <div id="collapse{{ $faq->id }}" class="accordion-collapse collapse" aria-labelledby="heading{{ $faq->id }}"
+                                data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>{{ $faq->answer }}</p>
                                 </div>
                             </div>
-                        @endforeach
-                    </div>
-                @endforeach
+                        </div>
+                    @endforeach
+                </div>
             </div>
         </div>
     </div>
 </div>
-<!-- FAQs Page End -->
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const options = document.querySelectorAll('.option');
+    const faqItems = document.querySelectorAll('.accordion-item');
+
+    options.forEach(option => {
+        option.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter').toLowerCase(); // Convert to lowercase for consistent comparison
+
+            // Remove the 'active' class from all options
+            options.forEach(opt => opt.classList.remove('active'));
+            // Add the 'active' class to the clicked option
+            this.classList.add('active');
+
+            // Show/Hide FAQs based on filter
+            faqItems.forEach(item => {
+                const category = item.getAttribute('data-category').toLowerCase(); // Convert category to lowercase
+
+                if (filter === 'all') {
+                    item.style.display = 'block';  // Show all FAQs
+                } else {
+                    if (category === filter) {
+                        item.style.display = 'block';  // Show matching category
+                    } else {
+                        item.style.display = 'none';   // Hide non-matching categories
+                    }
+                }
+            });
+        });
+    });
+});
+
+</script>
 
  @endsection 

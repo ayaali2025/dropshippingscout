@@ -167,3 +167,9 @@ font-size: 16px;
     padding: 0px 0px;
     padding-bottom: 40px;
 }
+
+.option.active {
+    background-color: #1E3F5B;
+    color: #FCFDFF;
+    cursor: pointer;
+}
