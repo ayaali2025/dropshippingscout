@@ -186,8 +186,8 @@
         </div>
         <div class="post-item-body">
              <h3><a href="#">Product Scouting</a></h3>
-            <p>Take your business to the next level by fine-tuning your product
-                offerings and marketing strategies</p>
+            <p>Maximize your profits by uncovering high-demand products with our advanced tools, tailored for successful dropshipping.
+            </p>
         </div>
     </div>
 </div>
@@ -204,9 +204,8 @@
         <div class="post-item-body">
              <h3><a href="#">Competitor monitoring</a></h3>
 
-            <p>By analyzing search volume, sales data, and social media
-                mentions, these tools can pinpoint products that are
-                gaining traction in the market</p>
+            <p>Gain valuable insights into competitor strategies, allowing you to make informed decisions and stay ahead in the market.
+            </p>
                
         </div>
     </div>
@@ -224,7 +223,7 @@
         <div class="post-item-body">
              <h3><a href="#"> Supplier Scouting</a></h3>
 
-             <p>involves conducting thorough research, analyzing consumer behavior, and staying informed about industry developments</p>
+             <p>Effortlessly connect with reliable suppliers, streamlining your sourcing process and enhancing your dropshipping efficiency.</p>
                   
          </div>
     </div>
@@ -265,14 +264,14 @@
     <div class="container">
         <div class="row">
             <!-- Product Scouting Services -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item wow fadeInUp" data-wow-delay="0.25s" data-category="product-scouting">
+            <div class="col-lg-4 col-md-6 service-column" data-category="product-scouting">
+                <div class="service-item wow fadeInUp" data-wow-delay="0.25s" >
                     <div class="service-content">
                         <div class="service-content-title">
-                            <h2>Product Research (eBay)</h2>
+                            <h2>Product insight</h2>
                             <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
-                        <p>totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae.</p>
+                        <p>Find products with high demand, low competition, and good profit potential on eBay, helping you boost your sales and grow your business</p>
                     </div>
                     <div class="service-image">
                         <figure class="image-anime">
@@ -282,14 +281,14 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item wow fadeInUp" data-wow-delay="0.5s" data-category="product-scouting">
+            <div class="col-lg-4 col-md-6 service-column" data-category="product-scouting">
+                <div class="service-item wow fadeInUp" data-wow-delay="0.5s" >
                     <div class="service-content">
                         <div class="service-content-title">
-                            <h2>Product Research (Shopify)</h2>
+                            <h2>Shopify Insight</h2>
                             <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
-                        <p>totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae.</p>
+                        <p>Discover winning products for Shopify dropshipping by identifying trends, analyzing competition, and maximizing profit potential.</p>
                     </div>
                     <div class="service-image">
                         <figure class="image-anime">
@@ -299,14 +298,15 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item wow fadeInUp" data-wow-delay="0.75s" data-category="product-scouting">
+            <div class="col-lg-4 col-md-6 service-column" data-category="product-scouting">
+                <div class="service-item wow fadeInUp" data-wow-delay="0.75s" >
                     <div class="service-content">
                         <div class="service-content-title">
-                            <h2>eBay Best Items</h2>
+                            <h2>TopBay Picks</h2>
                             <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
-                        <p>totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae.</p>
+                        <p>Discover top-selling eBay items perfect for dropshipping, ensuring high demand and maximum profitability with minimal risk.
+                        </p>
                     </div>
                     <div class="service-image">
                         <figure class="image-anime">
@@ -316,14 +316,14 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item wow fadeInUp" data-wow-delay="0.25s" data-category="product-scouting">
+            <div class="col-lg-4 col-md-6 service-column" data-category="product-scouting">
+                <div class="service-item wow fadeInUp" data-wow-delay="0.25s" >
                     <div class="service-content">
                         <div class="service-content-title">
-                            <h2>Category Research (eBay)</h2>
+                            <h2>NicheFinder</h2>
                             <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
-                        <p>totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae.</p>
+                        <p>Discover profitable niches on eBay with ease, identifying untapped markets with high demand and low competition to maximize your dropshipping success.</p>
                     </div>
                     <div class="service-image">
                         <figure class="image-anime">
@@ -333,31 +333,16 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item wow fadeInUp" data-wow-delay="0.5s" data-category="product-scouting">
-                    <div class="service-content">
-                        <div class="service-content-title">
-                            <h2>Search By Image (eBay)</h2>
-                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
-                        </div>
-                        <p>totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae.</p>
-                    </div>
-                    <div class="service-image">
-                        <figure class="image-anime">
-                            <img src="{{asset('images/ProductScouting-eBay.jpeg')}}" alt="">
-                        </figure>
-                    </div>
-                </div>
-            </div>
+            
 
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item wow fadeInUp" data-wow-delay="0.75s" data-category="product-scouting">
+            <div class="col-lg-4 col-md-6 service-column"  data-category="product-scouting">
+                <div class="service-item wow fadeInUp" data-wow-delay="0.75s">
                     <div class="service-content">
                         <div class="service-content-title">
-                            <h2>Title Builder</h2>
+                            <h2>TitleMaster</h2>
                             <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
-                        <p>totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae.</p>
+                        <p>Optimize your eBay listings with keyword-rich titles that drive visibility, boost clicks, and increase sales as a dropshipper.</p>
                     </div>
                     <div class="service-image">
                         <figure class="image-anime">
@@ -368,14 +353,15 @@
             </div>
 
             <!-- Competitor Monitoring Services (Initially Hidden) -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item wow fadeInUp" data-wow-delay="0.25s" data-category="competitor-monitoring" style="display:none;">
+            <div class="col-lg-4 col-md-6 service-column" data-category="competitor-monitoring" style="display:none;">
+                <div class="service-item wow fadeInUp" data-wow-delay="0.25s" >
                     <div class="service-content">
                         <div class="service-content-title">
-                            <h2>Competitors Research (eBay)</h2>
+                            <h2>RivalView</h2>
                             <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
-                        <p>totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae.</p>
+                        <p>Analyze competitors on eBay to identify successful strategies, optimize your listings, and gain a competitive edge
+                        </p>
                     </div>
                     <div class="service-image">
                         <figure class="image-anime">
@@ -385,14 +371,14 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item wow fadeInUp" data-wow-delay="0.5s" data-category="competitor-monitoring" style="display:none;">
+            <div class="col-lg-4 col-md-6 service-column" data-category="competitor-monitoring" style="display:none;">
+                <div class="service-item wow fadeInUp" data-wow-delay="0.5s" >
                     <div class="service-content">
                         <div class="service-content-title">
-                            <h2>Competitors Research (Shopify)</h2>
+                            <h2>Shopify Spy</h2>
                             <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
-                        <p>totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae.</p>
+                        <p>Analyze competitors on Shopify to identify successful strategies, optimize your dropshipping approach, and increase your market share.</p>
                     </div>
                     <div class="service-image">
                         <figure class="image-anime">
@@ -402,14 +388,14 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item wow fadeInUp" data-wow-delay="0.75s" data-category="competitor-monitoring" style="display:none;">
+            <div class="col-lg-4 col-md-6 service-column"  data-category="competitor-monitoring" style="display:none;">
+                <div class="service-item wow fadeInUp" data-wow-delay="0.75s">
                     <div class="service-content">
                         <div class="service-content-title">
-                            <h2>Best Competitors (Shopify)</h2>
+                            <h2>Shopify Store Finder</h2>
                             <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
-                        <p>totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae.</p>
+                        <p>Unlock insights into Shopify stores, revealing their order numbers and revenue to help you find profitable dropshipping opportunities on Shopify.</p>
                     </div>
                     <div class="service-image">
                         <figure class="image-anime">
@@ -420,14 +406,14 @@
             </div>
 
             <!-- Supplier Scouting Services (Initially Hidden) -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item wow fadeInUp" data-wow-delay="0.25s" data-category="supplier-scouting" style="display:none;">
+            <div class="col-lg-4 col-md-6 service-column"  data-category="supplier-scouting" style="display:none;">
+                <div class="service-item wow fadeInUp" data-wow-delay="0.25s">
                     <div class="service-content">
                         <div class="service-content-title">
-                            <h2>TikTok Scanner</h2>
+                            <h2>TikTrend Scan</h2>
                             <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
-                        <p>Compare different suppliers to find the best deals and quality.</p>
+                        <p>Discover trending products and optimize your dropshipping strategy on TikTok Shop with TikTrend Scan's powerful insights.</p>
                     </div>
                     <div class="service-image">
                         <figure class="image-anime">
@@ -437,14 +423,31 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item wow fadeInUp" data-wow-delay="0.5s" data-category="supplier-scouting" style="display:none;">
+            <div class="col-lg-4 col-md-6 service-column" data-category="supplier-scouting" style="display: none">
+                <div class="service-item wow fadeInUp" data-wow-delay="0.5s" >
+                    <div class="service-content">
+                        <div class="service-content-title">
+                            <h2>Express Finder</h2>
+                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
+                        </div>
+                        <p>Quickly find products and suppliers on AliExpress by searching with an image, streamlining your dropshipping process.</p>
+                    </div>
+                    <div class="service-image">
+                        <figure class="image-anime">
+                            <img src="{{asset('images/ProductScouting-eBay.jpeg')}}" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 service-column" data-category="supplier-scouting" style="display:none;">
+                <div class="service-item wow fadeInUp" data-wow-delay="0.5s" >
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>Amazon Scanner</h2>
                             <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
-                        <p>Monitor supplier activities to ensure timely delivery and quality products.</p>
+                        <p>Search for products on Amazon with our scanner to access prices, ratings, and reviews, optimizing your dropshipping strategy.</p>
                     </div>
                     <div class="service-image">
                         <figure class="image-anime">
@@ -454,14 +457,14 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item wow fadeInUp" data-wow-delay="0.75s" data-category="supplier-scouting" style="display:none;">
+            <div class="col-lg-4 col-md-6 service-column" data-category="supplier-scouting" style="display:none;">
+                <div class="service-item wow fadeInUp" data-wow-delay="0.75s" >
                     <div class="service-content">
                         <div class="service-content-title">
-                            <h2>Walmart Scanner</h2>
+                            <h2>Walmart Watch</h2>
                             <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
-                        <p>In-depth research on potential suppliers for Shopify stores.</p>
+                        <p>Discover Walmart products with pricing, ratings, and reviews, empowering dropshippers to make informed purchasing decisions</p>
                     </div>
                     <div class="service-image">
                         <figure class="image-anime">
@@ -470,14 +473,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item wow fadeInUp" data-wow-delay="0.75s" data-category="supplier-scouting" style="display:none;">
+            <div class="col-lg-4 col-md-6 service-column" data-category="supplier-scouting" style="display:none;">
+                <div class="service-item wow fadeInUp" data-wow-delay="0.75s" >
                     <div class="service-content">
                         <div class="service-content-title">
-                            <h2>Express Scanner</h2>
+                            <h2>Express Scan</h2>
                             <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
-                        <p>In-depth research on potential suppliers for Shopify stores.</p>
+                        <p>Identify top-selling products, reliable sellers, and competitive prices on AliExpress to enhance your dropshipping success.</p>
                     </div>
                     <div class="service-image">
                         <figure class="image-anime">
@@ -486,14 +489,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item wow fadeInUp" data-wow-delay="0.75s" data-category="supplier-scouting" style="display:none;">
+            <div class="col-lg-4 col-md-6 service-column" data-category="supplier-scouting" style="display:none;">
+                <div class="service-item wow fadeInUp" data-wow-delay="0.75s" >
                     <div class="service-content">
                         <div class="service-content-title">
-                            <h2>Supplier Research</h2>
+                            <h2>Supplier Scout</h2>
                             <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
-                        <p>In-depth research on potential suppliers for Shopify stores.</p>
+                        <p>Discover reliable suppliers on AliExpress with competitive pricing and quality products, streamlining your dropshipping success.</p>
                     </div>
                     <div class="service-image">
                         <figure class="image-anime">
@@ -669,7 +672,7 @@
 <script>
  document.addEventListener("DOMContentLoaded", function() {
     const options = document.querySelectorAll(".options-container .option");
-    const serviceItems = document.querySelectorAll(".service-item");
+    const serviceItems = document.querySelectorAll(".service-column");
 
     options.forEach(option => {
         option.addEventListener("click", function() {
