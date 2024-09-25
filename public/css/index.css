@@ -984,3 +984,35 @@ margin-left: 8px;
   transform: translateY(-5px);
   color: #1E3F5B;
 }
+.service-content-title a {
+  background-color: #8ab3d5;
+}
+
+        /* Responsive design for mobile screens */
+        @media screen and (max-width: 768px) {
+ 
+
+          .con-left {
+            flex-direction: column;
+          }
+        
+          .left-column, .right-column {
+            width: 100%;
+          }
+        
+          .email-container {
+             width: 100%;
+          }
+        
+          .gradient-circle {
+            display: none; /* Hide gradient circle on mobile */
+          }
+        
+          img {
+            width: 80%; /* Adjust image size for mobile */
+          }
+        
+          h2 {
+            font-size: 2rem; /* Adjust font size for smaller screens */
+          }
+        }

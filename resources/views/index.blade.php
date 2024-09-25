@@ -8,7 +8,6 @@
 @section('styles')
     <!-- Custom CSS for this view -->
     <link href="{{asset('css/index.css')}}" rel="stylesheet">
-
 @endsection
 
 @section('content')
@@ -122,7 +121,8 @@
                 <div class="col-lg-8">
                     <!-- Section Title Start -->
                     <div class="section-title d-flex justify-content-center">
-                        <h2 class="text-anime-style-3" style="font-size: 30px;">Why Dropshipping Scout?</h2>
+                        <h2 class="text-anime-style-3" style="font-size: 30px;">Why <img src="{{asset('images/Scout-Logo%2020x20-03.svg')}}" alt="Scout Logo" style="width: 40px;
+    padding-bottom: 14px;"> Dropshipping Scout?</h2>
                     </div>
                     <!-- Section Title End -->
                 </div>
@@ -142,7 +142,7 @@
                     <!-- About Us Image End -->
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6" style="padding-bottom:150px">
                     <!-- About Us Content Start -->
                     <div class="about-content">
                         <h4 class="wow fadeInUp" data-wow-delay="0.25s" style="padding-bottom: 20px;line-height: inherit;" >Dropshipping Scout is your all-in-one solution for effortless dropshipping</h4>
@@ -188,6 +188,8 @@
              <h3><a href="#">Product Scouting</a></h3>
             <p>Maximize your profits by uncovering high-demand products with our advanced tools, tailored for successful dropshipping.
             </p>
+            <a href="{{ route('pages.show', ['slug' => 'product-scouting']) }}" class="btn-default" style="background: #3545D6; border: 1px solid #3545D6; border-radius: 50px; display: block; text-align: center; margin: 0 auto; width: fit-content;">Read More</a>
+
         </div>
     </div>
 </div>
@@ -206,7 +208,8 @@
 
             <p>Gain valuable insights into competitor strategies, allowing you to make informed decisions and stay ahead in the market.
             </p>
-               
+            <a href="{{ route('pages.show', ['slug' => 'competitor-monitoring']) }}" class="btn-default" style="background: #3545D6; border: 1px solid #3545D6; border-radius: 50px; display: block; text-align: center; margin: 0 auto; width: fit-content;">Read More</a>
+
         </div>
     </div>
 </div>
@@ -224,7 +227,8 @@
              <h3><a href="#"> Supplier Scouting</a></h3>
 
              <p>Effortlessly connect with reliable suppliers, streamlining your sourcing process and enhancing your dropshipping efficiency.</p>
-                  
+             <a href="{{ route('pages.show', ['slug' => 'suppliers-scouting']) }}" class="btn-default" style="background: #3545D6; border: 1px solid #3545D6; border-radius: 50px; display: block; text-align: center; margin: 0 auto; width: fit-content;">Read More</a>
+   
          </div>
     </div>
 </div>
