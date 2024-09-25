@@ -142,7 +142,7 @@
                     <!-- About Us Image End -->
                 </div>
 
-                <div class="col-lg-6" style="padding-bottom:150px">
+                <div class="col-lg-6 aboutCol">
                     <!-- About Us Content Start -->
                     <div class="about-content">
                         <h4 class="wow fadeInUp" data-wow-delay="0.25s" style="padding-bottom: 20px;line-height: inherit;" >Dropshipping Scout is your all-in-one solution for effortless dropshipping</h4>
