@@ -173,9 +173,11 @@ class BlogController extends Controller
     $blogs = Blog::whereNotNull('video_url')
                  ->whereNull('image')
                  ->get();
+    // Retrieve the page data where 'view_name' equals 'blogs'
+    $page = Page::where('view_name', 'blogs')->first();
                  
     // Pass both blogs and page data to the view
-    return view('blogs', compact('blogs'));
+    return view('blogs', compact('blogs', 'page'));
    }
 
     

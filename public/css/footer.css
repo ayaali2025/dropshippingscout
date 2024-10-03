@@ -8,5 +8,6 @@
 @media only screen and (max-width: 991px) {
     .footer-links h2 {
          text-align: left;
+         padding-top: 15px;
     }
 }

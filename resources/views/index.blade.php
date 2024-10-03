@@ -8,6 +8,7 @@
 @section('styles')
     <!-- Custom CSS for this view -->
     <link href="{{asset('css/index.css')}}" rel="stylesheet">
+ 
 @endsection
 
 @section('content')
@@ -36,7 +37,7 @@
             </div>
             <div class="right-column">
                 <div class="gradient-circle"></div>
-                <img src="{{asset('images/Banner1-Final0.png')}}" alt="Example Image" >
+                <img src="{{asset('images/Banner1-Final0.png')}}" alt="Example Image" class="bannerImg">
             </div>
             
         </div>
@@ -615,7 +616,7 @@
             <div class="col-lg-6 col-md-8">
                 <!-- Section Title Start -->
                 <div class="section-title">
-                    <h3 class="wow fadeInUp">Latest Blog & Articles</h3>
+                    <h1 class="wow fadeInUp">Latest Blog & Articles</h1>
                     <h2 class="text-anime-style-3">The latest insights you need to know</h2>
                 </div>
                 <!-- Section Title End -->
