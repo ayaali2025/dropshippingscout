@@ -225,9 +225,57 @@
                             </div>
 
                         </div>
-                        <div style="text-align: center">
-                        <a href="" style="color: #1E3F5B; text-align:center; font-size:15px">Add New Card</a>
-                        </div>
+                       <!-- "Add New Card" link -->
+<div style="text-align: center">
+    <a href="javascript:void(0);" id="add-card-link" style="color: #1E3F5B; text-align:center; font-size:15px">Add New Card</a>
+</div>
+
+<!-- Hidden Card Form Section -->
+<div id="new-card-section" style="display: none; margin-top: 20px;">
+    <div class="row">
+        <!-- Card Number (Full Width) -->
+        <div class="form-group col-md-12 mb-4 position-relative">
+            <label>Card Number</label>
+            <div class="input-group">
+                <input type="number" name="cardnumber" class="form-control new-card-input" id="cardnumber" placeholder="" required>
+            </div>
+            <div class="help-block with-errors"></div>
+        </div>
+
+        <!-- Expire and CVC (Side by Side) -->
+        <div class="form-group col-md-6 mb-4 position-relative">
+            <label>Expire</label>
+            <div class="input-group">
+                <input type="text" name="expire" class="form-control new-card-input" id="expire" placeholder="MM/YY" required>
+            </div>
+            <div class="help-block with-errors"></div>
+        </div>
+
+        <div class="form-group col-md-6 mb-4 position-relative">
+            <label>CVC</label>
+            <div class="input-group">
+                <input type="number" name="cvc" class="form-control new-card-input" id="cvc" placeholder="" required max="3" >
+            </div>
+            <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group col-md-12 mb-4 position-relative">
+            <label>Cardholder Name</label>
+            <div class="input-group">
+                <input type="text" name="cardholder" class="form-control new-card-input" id="cardholder" placeholder="" required>
+            </div>
+            <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group col-md-12 mb-4 position-relative">
+            <div class="new-card-button-container">
+                <button type="button" class="new-card-delete-btn">Delete Card</button>
+                <button type="submit" class="new-card-save-btn">Save Changes</button>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
 
                     </div>
                     
@@ -388,6 +436,18 @@ paypalBtn.addEventListener('click', function() {
 
 </script>
 
+<!-- Script to Toggle the Card Form Section -->
+<script>
+    document.getElementById('add-card-link').addEventListener('click', function(e) {
+        e.preventDefault();  // Prevent the default link behavior
+        var cardSection = document.getElementById('new-card-section');
+        if (cardSection.style.display === 'none' || cardSection.style.display === '') {
+            cardSection.style.display = 'block';  // Show the form
+        } else {
+            cardSection.style.display = 'none';   // Hide the form
+        }
+    });
+</script>
  
     <!-- clients testimonials Section End -->
 @endsection
