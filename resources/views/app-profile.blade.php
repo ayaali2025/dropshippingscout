@@ -35,11 +35,11 @@
             
                 <div class="contact-info">
                     <div class="contact-item">
-                        <img src="images/email.svg" alt="Email Icon" class="icon">
+                        <img src="{{asset('images/email.svg')}}" alt="Email Icon" class="icon">
                         <span class="contact-text">john.doe@example.com</span>
                     </div>
                     <div class="contact-item">
-                        <img src="images/phone-call.png" alt="Phone Icon" class="icon">
+                        <img src="{{asset('images/phone-call.png')}}" alt="Phone Icon" class="icon">
                         <span class="contact-text">+20123456789</span>
                     </div>
                 </div>
