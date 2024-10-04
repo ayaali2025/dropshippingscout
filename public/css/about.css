@@ -75,3 +75,6 @@ font-size: 30px !important;
 .section-paragraph{
     padding-top: 10px;
 }
+.reveal {
+    visibility: visible;
+}
