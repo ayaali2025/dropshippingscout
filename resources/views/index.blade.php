@@ -274,7 +274,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>Product insight</h2>
-                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
+                            <a href="{{ route('tools-product.show', ['slug' => 'shopify-insight']) }}"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>Find products with high demand, low competition, and good profit potential on eBay, helping you boost your sales and grow your business</p>
                     </div>
@@ -291,7 +291,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>Shopify Insight</h2>
-                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
+                            <a href="{{ route('tools-product.show', ['slug' => 'shopify-insight']) }}"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>Discover winning products for Shopify dropshipping by identifying trends, analyzing competition, and maximizing profit potential.</p>
                     </div>
@@ -308,7 +308,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>TopBay Picks</h2>
-                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
+                            <a href="{{ route('tools-product.show', ['slug' => 'topbay-picks']) }}"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>Discover top-selling eBay items perfect for dropshipping, ensuring high demand and maximum profitability with minimal risk.
                         </p>
@@ -326,7 +326,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>NicheFinder</h2>
-                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
+                            <a href="{{ route('tools-product.show', ['slug' => 'ebay-niche-finder-tool']) }}"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>Discover profitable niches on eBay with ease, identifying untapped markets with high demand and low competition to maximize your dropshipping success.</p>
                     </div>
@@ -345,7 +345,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>TitleMaster</h2>
-                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
+                            <a href="{{ route('tools-product.show', ['slug' => 'ebay-title-master']) }}"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>Optimize your eBay listings with keyword-rich titles that drive visibility, boost clicks, and increase sales as a dropshipper.</p>
                     </div>
@@ -363,7 +363,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>RivalView</h2>
-                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
+                            <a href="{{ route('tools-product.show', ['slug' => 'ebay-rivalview-tool']) }}"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>Analyze competitors on eBay to identify successful strategies, optimize your listings, and gain a competitive edge
                         </p>
@@ -381,7 +381,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>Shopify Spy</h2>
-                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
+                            <a href="{{ route('tools-product.show', ['slug' => 'shopify-spy-tool']) }}"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>Analyze competitors on Shopify to identify successful strategies, optimize your dropshipping approach, and increase your market share.</p>
                     </div>
@@ -398,7 +398,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>Shopify Store Finder</h2>
-                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
+                            <a href="{{ route('tools-product.show', ['slug' => 'shopify-store-finder']) }}"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>Unlock insights into Shopify stores, revealing their order numbers and revenue to help you find profitable dropshipping opportunities on Shopify.</p>
                     </div>
@@ -416,7 +416,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>TikTrend Scan</h2>
-                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
+                            <a href="{{ route('tools-product.show', ['slug' => 'tiktrend-scan-tool']) }}"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>Discover trending products and optimize your dropshipping strategy on TikTok Shop with TikTrend Scan's powerful insights.</p>
                     </div>
@@ -433,7 +433,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>Express Finder</h2>
-                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
+                            <a href="{{ route('tools-product.show', ['slug' => 'express-finder-tool']) }}"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>Quickly find products and suppliers on AliExpress by searching with an image, streamlining your dropshipping process.</p>
                     </div>
@@ -450,7 +450,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>Amazon Scanner</h2>
-                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
+                            <a href="{{ route('tools-product.show', ['slug' => 'amazon-scanner']) }}"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>Search for products on Amazon with our scanner to access prices, ratings, and reviews, optimizing your dropshipping strategy.</p>
                     </div>
@@ -467,7 +467,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>Walmart Watch</h2>
-                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
+                            <a href="{{ route('tools-product.show', ['slug' => 'walmart-watch-tool']) }}"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>Discover Walmart products with pricing, ratings, and reviews, empowering dropshippers to make informed purchasing decisions</p>
                     </div>
@@ -483,7 +483,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>Express Scan</h2>
-                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
+                            <a href="{{ route('tools-product.show', ['slug' => 'express-scan-tool']) }}"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>Identify top-selling products, reliable sellers, and competitive prices on AliExpress to enhance your dropshipping success.</p>
                     </div>
@@ -499,7 +499,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>Supplier Scout</h2>
-                            <a href="#"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
+                            <a href="{{ route('tools-product.show', ['slug' => 'express-supplier-scout-tool']) }}"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>Discover reliable suppliers on AliExpress with competitive pricing and quality products, streamlining your dropshipping success.</p>
                     </div>

@@ -10,90 +10,15 @@
 @section('styles')
     <!-- Custom CSS for this view -->
     <link href="{{asset('css/faqs.css')}}" rel="stylesheet">
-    <link href="{{asset('css/ebay-calculator.css')}}" rel="stylesheet">
-
- 
-<style>
-  .ebay-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    padding-bottom: 60px;
-  }
-
-  .ebay-column {
-    flex: 2;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #E2E7FB;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .ebay-middle-column {
-    flex: 4;
-    background-color: #EDEFFC;
-  }
-
-  .ebay-middle-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  .ebay-middle-section {
-    flex: 1;
-    padding: 20px;
-  }
-
-  .divider {
-    width: 1px;
-    background-color: #ccc;
-    margin: 0 10px;
-  }
-
-  .ebay-header {
-    font-weight: bold;
-    margin-bottom: 15px;
-    font-size: 1.2em;
-  }
-
-  .ebay-property {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-
-  .ebay-value {
-    color: #32CD32; /* Light green color */
-  }
-
-  /* Responsive styling */
-  @media (max-width: 768px) {
-    .ebay-container {
-      flex-direction: column;
-    }
-    .ebay-middle-column {
-      flex: 1;
-    }
-    .ebay-middle-container {
-      flex-direction: column;
-    }
-    .divider {
-      display: none;
-    }
-  }
-</style>
+    <link href="{{asset('css/title-builder.css')}}" rel="stylesheet">
  @endsection
 
 @section('content')
-    <div class="header">eBay Fee Calculator</div>
+    <div class="header">eBay Title Builder Tool</div>
     <p style="text-align: center;">Delve into the flexibility and customization oure services offer to help your product succeed.</p>
 
     <div class="search-container">
-        <input type="text" placeholder="Check Fees By Item ID">
+        <input type="text" placeholder="Add keyword of your product">
         <button>Search</button>
     </div>
 
@@ -107,9 +32,9 @@
               </select>
           </div>
           <div class="filter-box">
-              <label for="category">Category</label>
+              <label for="category">Shipping Location</label>
               <select id="category">
-                  <option value="" disabled selected>Select Category</option>
+                  <option value="" disabled selected>Unite</option>
                   <!-- Add categories here -->
               </select>
           </div>
@@ -163,99 +88,6 @@
           </a>
       </div>
   </div>
-  <div class="ebay-container">
-    <!-- First Column -->
-    <div class="ebay-column">
-      <div class="ebay-header">Your Profit</div>
-      <div class="ebay-property">
-        <span>Total Profit:</span>
-        <span class="ebay-value">$0.30</span>
-      </div>
-      <div class="ebay-property">
-        <span>Profit %:</span>
-        <span class="ebay-value">0.00%</span>
-      </div>
-    </div>
-
-    <!-- Middle Column with Two Sections -->
-    <div class="ebay-column ebay-middle-column">
-      <div class="ebay-middle-container">
-        <!-- Left Side of Middle Column -->
-        <div class="ebay-middle-section">
-          <div class="ebay-header">Profit & Fees Breakdown</div>
-          <div class="ebay-property">
-            <span>Sold Price:</span>
-            <span class="ebay-value">$0.30</span>
-          </div>
-          <div class="ebay-property">
-            <span>Final Value Fee:</span>
-            <span class="ebay-value">$0.30</span>
-          </div>
-          <div class="ebay-property">
-            <span>Fixed Transaction Fee:</span>
-            <span class="ebay-value">0.00%</span>
-          </div>
-          <div class="ebay-property">
-            <span>Promotion Fees:</span>
-            <span class="ebay-value">0.00%</span>
-          </div>
-          <div class="ebay-property">
-            <span>Total eBay Fees:</span>
-            <span class="ebay-value">0.00%</span>
-          </div>
-          <div class="ebay-property">
-            <span>Total eBay Fees %:</span>
-            <span class="ebay-value">0.00%</span>
-          </div>
-        </div>
-
-        <!-- Divider Line -->
-        <div class="divider"></div>
-
-        <!-- Right Side of Middle Column -->
-        <div class="ebay-middle-section">
-          <div class="ebay-header">Other Costs</div>
-          <div class="ebay-property">
-            <span>Item Cost:</span>
-            <span class="ebay-value">$0.30</span>
-          </div>
-          <div class="ebay-property">
-            <span>Shipping Cost:</span>
-            <span class="ebay-value">0.00%</span>
-          </div>
-          <div class="ebay-property">
-            <span>Other Costs:</span>
-            <span class="ebay-value">0.00%</span>
-          </div>
-          <div class="ebay-property">
-            <span>Total Cost:</span>
-            <span class="ebay-value">0.00%</span>
-          </div>
-          <div class="ebay-property">
-            <span>Total Cost %:</span>
-            <span class="ebay-value">0.00%</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Third Column -->
-    <div class="ebay-column">
-      <div class="ebay-header"></div>
-      <div class="ebay-property">
-        <span>Break Even Profit:</span>
-        <span class="ebay-value">$0.30</span>
-      </div>
-      <div class="ebay-property">
-        <span>Profit Margin:</span>
-        <span class="ebay-value">0.00%</span>
-      </div>
-      <div class="ebay-property">
-        <span>Total Profit:</span>
-        <span class="ebay-value">$0.30</span>
-      </div>
-    </div>
-  </div>
   
   <!-- Include your JavaScript file or script tag here -->
   <script>
@@ -298,6 +130,3 @@
   </script>
   
  @endsection 
-
-
- 
