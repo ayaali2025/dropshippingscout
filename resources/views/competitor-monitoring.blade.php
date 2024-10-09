@@ -27,12 +27,14 @@
                  mentions, these tools can pinpoint products that are <br>
                   gaining traction in the market.</p>
                  <br>
-              <button class="btn-default" style="background: var(--primary-500) 0% 0% no-repeat padding-box;
+            <a href="{{ route('tools-product.show', ['slug' => 'ebay-rivalview-tool']) }}">
+             <button class="btn-default" style="background: var(--primary-500) 0% 0% no-repeat padding-box;
               border: 1px solid var(--primary-500);
               color: #1E3F5B
               ;
               background: #AFB9FA 0% 0% no-repeat padding-box;
-              border: 1px solid #AFB9FA; border-radius: 8px; opacity: 1;"   >Read More</button>
+              border: 1px solid #AFB9FA; border-radius: 8px; opacity: 1;">Read More</button>
+            </a>
             </div>
             
             <div class="right-column">
@@ -52,6 +54,7 @@
             </div>
             <h1 class="custom-heading">Competitor Research</h1>
             <p class="custom-text">Drive traffic and sales, ensuring your products are easily discoverable by potential customers.</p>
+            <a href="{{ route('tools-product.show', ['slug' => 'shopify-spy-tool']) }}">
             <button class="btn-default" style="background: var(--primary-500) 0% 0% no-repeat padding-box;
             border: 1px solid var(--primary-500);
             color: #1E3F5B
@@ -59,6 +62,7 @@
             background: #AFB9FA 0% 0% no-repeat padding-box;
             border: 1px solid #AFB9FA; border-radius: 8px; opacity: 1;  width: 200px;
             height: 46px;"   >Read More</button>
+            </a>
           </div>
         </div>
         
@@ -87,13 +91,9 @@
     </div>
     <h1 class="custom-heading">Shopify best competitors</h1>
     <p class="custom-text">Drive traffic and sales, ensuring your products are easily discoverable by potential customers.</p>
-    <button class="btn-default" style="background: var(--primary-500) 0% 0% no-repeat padding-box;
-    border: 1px solid var(--primary-500);
-    color: #1E3F5B
-    ;
-    background: #AFB9FA 0% 0% no-repeat padding-box;
-    border: 1px solid #AFB9FA; border-radius: 8px; opacity: 1;  width: 200px;
-    height: 46px;"   >Read More</button>
+    <a href="{{ route('tools-product.show', ['slug' => 'shopify-store-finder']) }}">
+    <button class="btn-default" style="background: var(--primary-500) 0% 0% no-repeat padding-box;border: 1px solid var(--primary-500);color: #1E3F5B;background: #AFB9FA 0% 0% no-repeat padding-box;border: 1px solid #AFB9FA; border-radius: 8px; opacity: 1;  width: 200px;height: 46px;">Read More</button>
+    </a>
   </div>
 </div>
     </div>

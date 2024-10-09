@@ -274,7 +274,7 @@
                     <div class="service-content">
                         <div class="service-content-title">
                             <h2>Product insight</h2>
-                            <a href="{{ route('tools-product.show', ['slug' => 'shopify-insight']) }}"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
+                            <a href="{{ route('tools-product.show', ['slug' => 'express-product-insight']) }}"><img src="{{asset('images/arrow.svg')}}" alt=""></a>
                         </div>
                         <p>Find products with high demand, low competition, and good profit potential on eBay, helping you boost your sales and grow your business</p>
                     </div>

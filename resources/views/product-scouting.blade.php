@@ -26,12 +26,9 @@
                 these tools can pinpoint products that are <br>
                 gaining traction in the market.</h5>
                  <br>
-              <button class="btn-default" style="background: var(--primary-500) 0% 0% no-repeat padding-box;
-              border: 1px solid var(--primary-500);
-              color: #1E3F5B
-              ;
-              background: #AFB9FA 0% 0% no-repeat padding-box;
-              border: 1px solid #AFB9FA; border-radius: 8px; opacity: 1;"   >Read More</button>
+                 <a href="{{ route('tools-product.show', ['slug' => 'express-product-insight']) }}">
+                  <button class="btn-default" style="background: var(--primary-500) 0% 0% no-repeat padding-box;border: 1px solid var(--primary-500);color: #1E3F5B;background: #AFB9FA 0% 0% no-repeat padding-box;border: 1px solid #AFB9FA; border-radius: 8px; opacity: 1;"   >Read More</button>
+                 </a>
             </div>
             
             <div class="right-column">
@@ -61,7 +58,9 @@
                          <img src="{{asset('images/ProductScouting-Shopify.jpeg')}}" alt="Main Image" class="unique-main-image">
                         <p class="unique-text">scouting efforts can lead to increased revenue 
                           streams and business growth.</p>
-                        <button class="unique-read-more">Read More</button>
+                          <a href="{{ route('tools-product.show', ['slug' => 'shopify-insight']) }}">
+                             <button class="unique-read-more">Read More</button>
+                          </a>
                     </div>
                 </div>
              
@@ -73,16 +72,11 @@
             <img src="{{asset('images/ProductScouting-eBay.jpeg')}}" alt="Main Image" class="custom-main-img">
           </div>
           <div class="custom-info-section">
-             
             <h1 class="custom-heading">eBay best items</h1>
             <p class="custom-text" style="padding-top:10px">Drive traffic and sales, ensuring your products are easily discoverable by potential customers.</p>
-            <button class="btn-default" style="background: var(--primary-500) 0% 0% no-repeat padding-box;
-            border: 1px solid var(--primary-500);
-            color: #1E3F5B
-            ;
-            background: #AFB9FA 0% 0% no-repeat padding-box;
-            border: 1px solid #AFB9FA; border-radius: 8px; opacity: 1;  width: 200px;
-            height: 46px;"   >Read More</button>
+            <a href="{{ route('tools-product.show', ['slug' => 'ebay-niche-finder-tool']) }}">
+              <button class="btn-default" style="background: var(--primary-500) 0% 0% no-repeat padding-box;border: 1px solid var(--primary-500);color: #1E3F5B;background: #AFB9FA 0% 0% no-repeat padding-box;border: 1px solid #AFB9FA; border-radius: 8px; opacity: 1;  width: 200px;height: 46px;" >Read More</button>
+            </a>
           </div>
         </div>
         
@@ -131,11 +125,7 @@
       Maximize Your Reach and Revenue with SEO-Friendly Titles
     </h5>
     <br>
-    <button class="btn-default" style="background: var(--primary-500) 0% 0% no-repeat padding-box;
-    border: 1px solid var(--primary-500);
-    color: #1E3F5B;
-    background: #AFB9FA 0% 0% no-repeat padding-box;
-    border: 1px solid #AFB9FA; border-radius: 8px; opacity: 1;">Read More</button>
+    <button class="btn-default" style="background: var(--primary-500) 0% 0% no-repeat padding-box;border: 1px solid var(--primary-500);color: #1E3F5B;background: #AFB9FA 0% 0% no-repeat padding-box;border: 1px solid #AFB9FA; border-radius: 8px; opacity: 1;">Read More</button>
   </div>
   <div class="right-column">
     <img src="{{asset('./images/title-builder.jpg')}}" alt="Example Image">
