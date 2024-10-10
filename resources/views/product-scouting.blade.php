@@ -125,8 +125,10 @@
       Maximize Your Reach and Revenue with SEO-Friendly Titles
     </h5>
     <br>
+       <a href="{{ route('tools-product.show', ['slug' => 'ebay-title-master']) }}">
     <button class="btn-default" style="background: var(--primary-500) 0% 0% no-repeat padding-box;border: 1px solid var(--primary-500);color: #1E3F5B;background: #AFB9FA 0% 0% no-repeat padding-box;border: 1px solid #AFB9FA; border-radius: 8px; opacity: 1;">Read More</button>
-  </div>
+       </a>
+       </div>
   <div class="right-column">
     <img src="{{asset('./images/title-builder.jpg')}}" alt="Example Image">
   </div>
